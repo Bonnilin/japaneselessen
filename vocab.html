@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>單字閃卡｜ニホンゴ・クエスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="title">ニホンゴ・クエスト</span>
+      <span class="subtitle">NIHONGO QUEST — 五十音 → N4</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="gojuon.html">五十音</a>
+      <a href="lesson-te-form.html">文法：て形</a>
+      <a href="lesson-passive.html">文法：受身形</a>
+      <a href="vocab.html" aria-current="page">單字閃卡</a>
+      <a href="kanji.html">漢字特訓</a>
+      <a href="anime-fill.html">句子填空</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">
+    <span class="bolt">🃏</span>
+    <h2>單字閃卡（SRS 間隔重複）</h2>
+  </div>
+
+  <div class="panel accent-purple">
+    <p>點卡片翻面查看意思，再依照熟悉程度選擇「忘記了／有點難／記得／很簡單」。系統會依照 Leitner 間隔重複邏輯，自動安排下次複習的時間——越熟的字，之後出現的頻率越低。</p>
+    <div class="deck-status" id="deck-status"></div>
+  </div>
+
+  <div class="flash-stage" id="flash-stage"></div>
+
+  <div class="btn-row" style="justify-content:center;">
+    <button class="btn secondary" id="practice-all-btn">🔁 不管進度，直接練習全部單字</button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  ニホンゴ・クエスト — 個人日文學習練習網站 Demo
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/data/vocab-data.js"></script>
+<script src="js/vocab.js"></script>
+</body>
+</html>

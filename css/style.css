@@ -1,0 +1,581 @@
+/* ==========================================================================
+   ニホンゴ・クエスト — Nihongo Quest
+   誇張漫畫風格樣式表（原創設計，非引用任何特定作品之角色／商標）
+   ========================================================================== */
+
+:root {
+  --pink: #ff2e88;
+  --purple: #7b2ff7;
+  --gold: #ffd400;
+  --teal: #00e5cf;
+  --ink: #14101c;
+  --ink-soft: #211a2e;
+  --paper: #faf4e6;
+  --paper-dim: #ece2cb;
+  --danger: #ff4757;
+  --success: #2ed17a;
+  --border-w: 4px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(123, 47, 247, 0.35), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(255, 46, 136, 0.30), transparent 45%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 40px);
+  color: var(--paper);
+  font-family: "Noto Sans TC", "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.jp {
+  font-family: "Noto Sans JP", "Noto Sans TC", sans-serif;
+}
+
+h1, h2, h3, .display {
+  font-family: "Bungee", "Noto Sans TC", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+ruby rt {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.55em;
+  color: var(--purple);
+}
+
+a { color: inherit; }
+
+/* ---------- Layout shell ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--ink);
+  border-bottom: var(--border-w) solid var(--gold);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.35);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transform: skewX(-4deg);
+}
+
+.brand .title {
+  font-family: "Bungee", sans-serif;
+  font-size: 1.4rem;
+  color: var(--paper);
+  text-shadow: 3px 3px 0 var(--pink), 6px 6px 0 var(--purple);
+}
+
+.brand .subtitle {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--teal);
+  transform: skewX(4deg);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.8rem;
+  border: 2px solid var(--paper);
+  border-radius: 999px;
+  color: var(--paper);
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem 5rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  color: rgba(250, 244, 230, 0.55);
+  font-size: 0.8rem;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  padding: 3.2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  border: var(--border-w) solid var(--paper);
+  border-radius: 18px;
+  background:
+    conic-gradient(from 45deg at 50% 50%, rgba(255,255,255,0.05) 0 10deg, transparent 10deg 20deg) ,
+    linear-gradient(135deg, var(--purple), var(--pink) 55%, var(--gold));
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.4);
+}
+
+.hero .impact-text {
+  position: absolute;
+  font-family: "Bungee", sans-serif;
+  color: rgba(255,255,255,0.18);
+  font-size: 6rem;
+  top: -0.5rem;
+  left: -1rem;
+  transform: rotate(-8deg);
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+  text-shadow: 2px 2px 0 var(--paper);
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--ink);
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.hero .cta-row {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Panels (manga panel look) ---------- */
+.panel {
+  background: var(--paper);
+  color: var(--ink);
+  border: var(--border-w) solid var(--ink);
+  border-radius: 14px;
+  padding: 1.6rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 8px 8px 0 var(--purple);
+}
+
+.panel.accent-pink { box-shadow: 8px 8px 0 var(--pink); }
+.panel.accent-teal { box-shadow: 8px 8px 0 var(--teal); }
+.panel.accent-gold { box-shadow: 8px 8px 0 var(--gold); }
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel h2 .tag {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 0.65rem;
+  background: var(--ink);
+  color: var(--gold);
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 2.2rem 0 1rem;
+}
+
+.section-title .bolt {
+  font-family: "Bungee", sans-serif;
+  color: var(--gold);
+  font-size: 1.6rem;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: var(--paper);
+  text-shadow: 2px 2px 0 var(--pink);
+}
+
+.stripe-divider {
+  height: 10px;
+  margin: 2rem 0;
+  background: repeating-linear-gradient(-45deg, var(--gold) 0 14px, var(--ink) 14px 28px);
+  border-radius: 6px;
+}
+
+/* ---------- Cards / grids ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.unit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  padding: 1.1rem;
+  box-shadow: 6px 6px 0 var(--purple);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.unit-card:nth-child(2n) { box-shadow: 6px 6px 0 var(--pink); }
+.unit-card:nth-child(3n) { box-shadow: 6px 6px 0 var(--teal); }
+.unit-card:nth-child(4n) { box-shadow: 6px 6px 0 var(--gold); }
+
+.unit-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 10px 10px 0 var(--ink);
+}
+
+.unit-card .icon { font-size: 1.8rem; }
+.unit-card .name { font-weight: 900; font-size: 1.05rem; }
+.unit-card .desc { font-size: 0.8rem; opacity: 0.75; }
+.unit-card .progress-label { font-size: 0.72rem; font-weight: 700; color: var(--purple); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.3rem;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  background: var(--gold);
+  color: var(--ink);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.btn:active { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); }
+
+.btn.secondary { background: var(--paper); }
+.btn.pink { background: var(--pink); color: var(--paper); }
+.btn.teal { background: var(--teal); }
+.btn.purple { background: var(--purple); color: var(--paper); }
+.btn.ghost { background: transparent; color: var(--paper); border-color: var(--paper); box-shadow: 4px 4px 0 rgba(255,255,255,0.25); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; box-shadow: none; transform: none; }
+
+.btn-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1rem; }
+
+.speak-btn {
+  border: 2px solid var(--ink);
+  background: var(--teal);
+  border-radius: 50%;
+  width: 2.1rem;
+  height: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.speak-btn:hover { background: var(--gold); }
+
+/* ---------- Progress bars ---------- */
+.progress-bar {
+  height: 14px;
+  background: var(--ink-soft);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--pink), var(--gold));
+}
+
+/* ---------- Gojuon table ---------- */
+.gojuon-tools {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.gojuon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.kana-cell {
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.5rem 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.kana-cell:hover { transform: scale(1.06); background: var(--gold); }
+.kana-cell .kana { font-size: 1.5rem; font-weight: 700; display: block; }
+.kana-cell .kata { font-size: 0.85rem; opacity: 0.6; display: block; }
+.kana-cell .romaji { font-size: 0.72rem; letter-spacing: 0.03em; color: var(--purple); display: block; }
+.kana-cell.empty { visibility: hidden; }
+
+/* ---------- Flashcards ---------- */
+.flash-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.flashcard {
+  width: 100%;
+  max-width: 420px;
+  min-height: 220px;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border: var(--border-w) solid var(--ink);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.flashcard-face.front { background: var(--paper); color: var(--ink); box-shadow: 8px 8px 0 var(--purple); }
+.flashcard-face.back {
+  background: var(--ink);
+  color: var(--paper);
+  transform: rotateY(180deg);
+  box-shadow: 8px 8px 0 var(--pink);
+}
+
+.flashcard-face .kanji-word { font-size: 2.4rem; font-weight: 700; }
+.flashcard-face .kana-word { font-size: 1rem; color: var(--purple); }
+.flashcard-face .meaning { font-size: 1.3rem; font-weight: 700; }
+.flashcard-face .example { font-size: 0.85rem; opacity: 0.85; margin-top: 0.4rem; }
+
+.grade-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 420px;
+}
+.grade-row button { font-size: 0.78rem; padding: 0.6rem 0.3rem; }
+
+.deck-status {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+.deck-status .stat { background: var(--ink-soft); border: 2px solid var(--paper); border-radius: 8px; padding: 0.4rem 0.8rem; }
+.deck-status .stat b { color: var(--gold); }
+
+/* ---------- Quiz ---------- */
+.quiz-question {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.quiz-options {
+  display: grid;
+  gap: 0.6rem;
+}
+.quiz-option {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.quiz-option:hover { background: #fff; }
+.quiz-option.correct { background: var(--success); color: var(--ink); }
+.quiz-option.incorrect { background: var(--danger); color: #fff; }
+.quiz-option:disabled { cursor: not-allowed; }
+
+.quiz-feedback { margin-top: 1rem; font-weight: 700; min-height: 1.4rem; }
+.quiz-feedback.correct { color: #157a45; }
+.quiz-feedback.incorrect { color: #b0202f; }
+
+.quiz-progress { font-size: 0.8rem; opacity: 0.65; margin-bottom: 0.5rem; }
+
+/* ---------- Kanji cards ---------- */
+.kanji-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.kanji-tile {
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.8rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 var(--teal);
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+.kanji-tile .char { font-size: 2.6rem; font-weight: 700; }
+.kanji-tile .hint { font-size: 0.7rem; opacity: 0.6; }
+.kanji-tile.revealed .detail { display: flex; }
+.kanji-tile .detail { display: none; flex-direction: column; gap: 0.15rem; font-size: 0.78rem; }
+.kanji-tile .detail .readings b { color: var(--purple); }
+
+/* ---------- Cloze / anime sentence unit ---------- */
+.sentence-card {
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 6px 6px 0 var(--gold);
+}
+
+.sentence-jp {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.blank-select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.sentence-translation { font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem; }
+.sentence-note { font-size: 0.8rem; color: var(--purple); margin-top: 0.4rem; }
+
+.sfx {
+  font-family: "Bungee", sans-serif;
+  color: var(--gold);
+  text-shadow: 2px 2px 0 var(--pink), -2px -2px 0 var(--purple);
+  font-size: 2rem;
+  display: inline-block;
+  transform: rotate(-4deg);
+}
+
+/* ---------- Misc ---------- */
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--teal);
+  color: var(--ink);
+}
+
+.note-box {
+  border-left: 6px solid var(--purple);
+  background: rgba(123,47,247,0.08);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  margin: 1rem 0;
+}
+
+table.grammar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+table.grammar-table th, table.grammar-table td {
+  border: 2px solid var(--ink);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+}
+table.grammar-table th { background: var(--ink); color: var(--gold); }
+
+@media (max-width: 640px) {
+  .gojuon-grid { grid-template-columns: repeat(5, 1fr); gap: 0.35rem; }
+  .kana-cell .kana { font-size: 1.15rem; }
+  .header-inner { flex-direction: column; align-items: flex-start; }
+}

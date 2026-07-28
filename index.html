@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ニホンゴ・クエスト｜五十音からN4へ</title>
+<meta name="description" content="從五十音開始，一路挑戰到 N4 的互動日文學習網站" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="title">ニホンゴ・クエスト</span>
+      <span class="subtitle">NIHONGO QUEST — 五十音 → N4</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" aria-current="page">首頁</a>
+      <a href="gojuon.html">五十音</a>
+      <a href="lesson-te-form.html">文法：て形</a>
+      <a href="lesson-passive.html">文法：受身形</a>
+      <a href="vocab.html">單字閃卡</a>
+      <a href="kanji.html">漢字特訓</a>
+      <a href="anime-fill.html">句子填空</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="impact-text">冒険</span>
+    <h1>覚悟を決めろ！<br>N4への道が今、始まる</h1>
+    <p>從五十音打底，一路練到 N4 文法、單字與漢字。每個單元都能立即互動、立即得到回饋，學習進度只存在你自己的瀏覽器裡，安心使用。</p>
+    <div class="cta-row">
+      <a class="btn" href="gojuon.html">🔰 從五十音開始</a>
+      <a class="btn purple" href="lesson-te-form.html">⚡ 直接挑戰文法</a>
+    </div>
+  </section>
+
+  <div class="panel accent-gold">
+    <h2><span class="tag">DEMO</span> 目前開放的內容</h2>
+    <p>這是本網站的第一階段成果：一套完整的學習架構＋ 6 個可實際互動的示範單元（五十音、兩課文法、單字閃卡、漢字特訓、動畫風格句子填空）。確認風格與互動方式沒問題後，會依照同樣的架構持續擴充到完整的 N5→N4 內容。</p>
+    <p style="margin-bottom:0;">整體完成度：</p>
+    <div class="progress-bar"><span id="overall-progress-bar" style="width:0%;"></span></div>
+    <p id="overall-progress-label" style="font-size:0.85rem; margin-top:0.4rem;">整體完成度：讀取中…</p>
+  </div>
+
+  <div class="section-title">
+    <span class="bolt">⚔</span>
+    <h2>選擇你的訓練單元</h2>
+  </div>
+
+  <div class="card-grid">
+    <a class="unit-card" href="gojuon.html">
+      <span class="icon">🈴</span>
+      <span class="name">五十音表</span>
+      <span class="desc">清音、濁音、半濁音、拗音，點擊即可發音，還有隨機小測驗。</span>
+      <span class="progress-label" id="status-gojuon">讀取中…</span>
+    </a>
+    <a class="unit-card" href="lesson-te-form.html">
+      <span class="icon">🌀</span>
+      <span class="name">文法：て形</span>
+      <span class="desc">動詞變化規則 ＋ もいいです／はいけません／ください 三大句型。</span>
+      <span class="progress-label" id="status-te-form">讀取中…</span>
+    </a>
+    <a class="unit-card" href="lesson-passive.html">
+      <span class="icon">🔥</span>
+      <span class="name">文法：受身形</span>
+      <span class="desc">N4 重點文法「被動式」，學會表達「被…」的各種情境。</span>
+      <span class="progress-label" id="status-passive">讀取中…</span>
+    </a>
+    <a class="unit-card" href="vocab.html">
+      <span class="icon">🃏</span>
+      <span class="name">單字閃卡</span>
+      <span class="desc">20 個 N4 精選單字，內建間隔重複記憶（SRS），越練越熟。</span>
+      <span class="progress-label" id="status-vocab">讀取中…</span>
+    </a>
+    <a class="unit-card" href="kanji.html">
+      <span class="icon">🀄</span>
+      <span class="name">漢字特訓</span>
+      <span class="desc">10 個常用 N4 漢字，音讀訓讀、部首、例詞一次搞懂。</span>
+      <span class="progress-label" id="status-kanji">讀取中…</span>
+    </a>
+    <a class="unit-card" href="anime-fill.html">
+      <span class="icon">💥</span>
+      <span class="name">動畫句子填空</span>
+      <span class="desc">原創熱血風格例句，練習剛學過的文法，體驗即戰力！</span>
+      <span class="progress-label" id="status-anime">讀取中…</span>
+    </a>
+  </div>
+
+  <div class="stripe-divider"></div>
+
+  <div class="panel">
+    <h2>📌 關於這個網站</h2>
+    <ul>
+      <li>純前端網站，不需要註冊登入，開啟瀏覽器就能學習。</li>
+      <li>學習進度（單字熟悉度、測驗最佳成績）都只存在你目前使用的瀏覽器 localStorage，換裝置或清除瀏覽器資料會重置。</li>
+      <li>發音使用瀏覽器內建語音合成（Web Speech API），建議使用 Chrome 或 Edge 以獲得較好的日文發音效果。</li>
+      <li>「動畫句子填空」單元使用原創例句，模仿熱血動畫常見台詞語感，並未引用任何特定作品之版權台詞。</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  ニホンゴ・クエスト — 個人日文學習練習網站 Demo
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/data/vocab-data.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

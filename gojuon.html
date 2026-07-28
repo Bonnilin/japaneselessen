@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>五十音表｜ニホンゴ・クエスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .gojuon-tab { font-family:"Noto Sans TC",sans-serif; font-weight:800; padding:0.5rem 1rem; border:3px solid var(--ink); border-radius:10px; background:var(--paper); color:var(--ink); cursor:pointer; }
+  .gojuon-tab.active { background:var(--gold); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="title">ニホンゴ・クエスト</span>
+      <span class="subtitle">NIHONGO QUEST — 五十音 → N4</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="gojuon.html" aria-current="page">五十音</a>
+      <a href="lesson-te-form.html">文法：て形</a>
+      <a href="lesson-passive.html">文法：受身形</a>
+      <a href="vocab.html">單字閃卡</a>
+      <a href="kanji.html">漢字特訓</a>
+      <a href="anime-fill.html">句子填空</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">
+    <span class="bolt">🈴</span>
+    <h2>五十音表</h2>
+  </div>
+  <div class="panel accent-teal">
+    <p>點擊任一個假名，瀏覽器就會唸出它的發音。先熟悉清音，再挑戰濁音、半濁音跟拗音，最後用小測驗驗收成果！</p>
+  </div>
+
+  <section id="gojuon-table-section">
+    <div class="gojuon-tools">
+      <button class="gojuon-tab active" data-category="seion">清音</button>
+      <button class="gojuon-tab" data-category="dakuten">濁音</button>
+      <button class="gojuon-tab" data-category="handakuten">半濁音</button>
+      <button class="gojuon-tab" data-category="youon">拗音</button>
+    </div>
+    <div class="panel">
+      <div class="gojuon-grid jp" id="gojuon-grid"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn pink" id="gojuon-quiz-btn">📝 開始五十音小測驗（隨機10題）</button>
+    </div>
+  </section>
+
+  <section id="gojuon-quiz" style="display:none;">
+    <div class="panel accent-pink" id="gojuon-quiz-container"></div>
+    <div class="btn-row">
+      <button class="btn secondary" id="gojuon-back-btn">← 回到五十音表</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  ニホンゴ・クエスト — 個人日文學習練習網站 Demo
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/data/gojuon-data.js"></script>
+<script src="js/gojuon.js"></script>
+</body>
+</html>

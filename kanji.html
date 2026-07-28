@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>漢字特訓｜ニホンゴ・クエスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="title">ニホンゴ・クエスト</span>
+      <span class="subtitle">NIHONGO QUEST — 五十音 → N4</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="gojuon.html">五十音</a>
+      <a href="lesson-te-form.html">文法：て形</a>
+      <a href="lesson-passive.html">文法：受身形</a>
+      <a href="vocab.html">單字閃卡</a>
+      <a href="kanji.html" aria-current="page">漢字特訓</a>
+      <a href="anime-fill.html">句子填空</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">
+    <span class="bolt">🀄</span>
+    <h2>漢字特訓</h2>
+  </div>
+
+  <div class="panel accent-teal">
+    <p>點擊漢字卡片查看音讀、訓讀、部首與例詞，熟悉之後再挑戰讀音小測驗！</p>
+  </div>
+
+  <section id="kanji-grid-section">
+    <div class="kanji-grid" id="kanji-grid"></div>
+    <div class="btn-row">
+      <button class="btn pink" id="kanji-quiz-btn">📝 開始漢字讀音小測驗（8題）</button>
+    </div>
+  </section>
+
+  <section id="kanji-quiz" style="display:none;">
+    <div class="panel accent-pink" id="kanji-quiz-container"></div>
+    <div class="btn-row">
+      <button class="btn secondary" id="kanji-back-btn">← 回到漢字卡片</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  ニホンゴ・クエスト — 個人日文學習練習網站 Demo
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/data/kanji-data.js"></script>
+<script src="js/kanji.js"></script>
+</body>
+</html>
