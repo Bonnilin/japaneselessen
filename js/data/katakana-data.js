@@ -17,5 +17,19 @@ const KATAKANA_DATA = [
   { id: 'k15', word: 'スマホ', romaji: 'sumaho', meaning: '智慧型手機', pos: '名詞', example: { jp: 'スマホで<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>ます。', zh: '用手機看照片。' } },
   { id: 'k16', word: 'パン', romaji: 'pan', meaning: '麵包', pos: '名詞', example: { jp: '<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>はパンを<ruby>食<rt>た</rt></ruby>べます。', zh: '早餐吃麵包。' } },
   { id: 'k17', word: 'ジュース', romaji: 'juusu', meaning: '果汁', pos: '名詞', example: { jp: 'オレンジジュースをください。', zh: '請給我柳橙汁。' } },
-  { id: 'k18', word: 'バス', romaji: 'basu', meaning: '公車', pos: '名詞', example: { jp: '<ruby>学校<rt>がっこう</rt></ruby>までバスで<ruby>行<rt>い</rt></ruby>きます。', zh: '搭公車去學校。' } }
+  { id: 'k18', word: 'バス', romaji: 'basu', meaning: '公車', pos: '名詞', example: { jp: '<ruby>学校<rt>がっこう</rt></ruby>までバスで<ruby>行<rt>い</rt></ruby>きます。', zh: '搭公車去學校。' } },
+  { id: 'k19', word: 'シャワー', romaji: 'shawaa', meaning: '淋浴', pos: '名詞', example: { jp: '<ruby>朝<rt>あさ</rt></ruby>、シャワーを<ruby>浴<rt>あ</rt></ruby>びます。', zh: '每天早上淋浴。' } },
+  { id: 'k20', word: 'トイレ', romaji: 'toire', meaning: '廁所', pos: '名詞', example: { jp: 'トイレはあちらです。', zh: '廁所在那邊。' } },
+  { id: 'k21', word: 'テーブル', romaji: 'teeburu', meaning: '桌子', pos: '名詞', example: { jp: 'テーブルの<ruby>上<rt>うえ</rt></ruby>に<ruby>花<rt>はな</rt></ruby>があります。', zh: '桌上有花。' } },
+  { id: 'k22', word: 'ノート', romaji: 'nooto', meaning: '筆記本', pos: '名詞', example: { jp: 'ノートに<ruby>書<rt>か</rt></ruby>きます。', zh: '寫在筆記本上。' } },
+  { id: 'k23', word: 'ペン', romaji: 'pen', meaning: '筆', pos: '名詞', example: { jp: 'このペンを<ruby>貸<rt>か</rt></ruby>してください。', zh: '請借我這支筆。' } },
+  { id: 'k24', word: 'カード', romaji: 'kaado', meaning: '卡片', pos: '名詞', example: { jp: 'クレジットカードで<ruby>払<rt>はら</rt></ruby>います。', zh: '用信用卡付款。' } },
+  { id: 'k25', word: 'チケット', romaji: 'chiketto', meaning: '票券', pos: '名詞', example: { jp: '<ruby>映画<rt>えいが</rt></ruby>のチケットを<ruby>買<rt>か</rt></ruby>いました。', zh: '買了電影票。' } },
+  { id: 'k26', word: 'サラダ', romaji: 'sarada', meaning: '沙拉', pos: '名詞', example: { jp: '<ruby>野菜<rt>やさい</rt></ruby>サラダを<ruby>食<rt>た</rt></ruby>べます。', zh: '吃蔬菜沙拉。' } },
+  { id: 'k27', word: 'ピザ', romaji: 'piza', meaning: '披薩', pos: '名詞', example: { jp: '<ruby>今夜<rt>こんや</rt></ruby>はピザを<ruby>注文<rt>ちゅうもん</rt></ruby>しましょう。', zh: '今晚訂披薩吧。' } },
+  { id: 'k28', word: 'ワイン', romaji: 'wain', meaning: '紅酒、葡萄酒', pos: '名詞', example: { jp: '<ruby>赤<rt>あか</rt></ruby>ワインが<ruby>好<rt>す</rt></ruby>きです。', zh: '喜歡紅酒。' } },
+  { id: 'k29', word: 'シャツ', romaji: 'shatsu', meaning: '襯衫', pos: '名詞', example: { jp: '<ruby>白<rt>しろ</rt></ruby>いシャツを<ruby>着<rt>き</rt></ruby>ています。', zh: '穿著白襯衫。' } },
+  { id: 'k30', word: 'メール', romaji: 'meeru', meaning: '電子郵件', pos: '名詞', example: { jp: 'メールを<ruby>送<rt>おく</rt></ruby>ります。', zh: '寄送電子郵件。' } },
+  { id: 'k31', word: 'インターネット', romaji: 'intaanetto', meaning: '網路', pos: '名詞', example: { jp: 'インターネットで<ruby>調<rt>しら</rt></ruby>べます。', zh: '用網路查詢。' } },
+  { id: 'k32', word: 'ゲーム', romaji: 'geemu', meaning: '遊戲', pos: '名詞', example: { jp: '<ruby>友達<rt>ともだち</rt></ruby>とゲームをします。', zh: '跟朋友玩遊戲。' } }
 ];
