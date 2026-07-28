@@ -295,4 +295,200 @@ const KANJI_SETS = [
       }
     ]
   },
+  {
+    slug: 'n5-batch2',
+    level: 'N5',
+    title: 'N5 漢字第 2 批',
+    desc: '上、下、中、大、小、山、川、田、天、空 — 10 個基礎方位與自然漢字',
+    kanji: [
+      {
+        id: 'p01', char: '上', meaning: '上面', radical: '一', strokes: 3,
+        onyomi: ['ジョウ'], kunyomi: ['うえ', 'あ.げる', 'のぼ.る'],
+        examples: [
+          { word: '上', reading: 'うえ', meaning: '上面' },
+          { word: '上手', reading: 'じょうず', meaning: '擅長' },
+          { word: '以上', reading: 'いじょう', meaning: '以上' }
+        ]
+      },
+      {
+        id: 'p02', char: '下', meaning: '下面', radical: '一', strokes: 3,
+        onyomi: ['カ', 'ゲ'], kunyomi: ['した', 'くだ.る', 'お.りる'],
+        examples: [
+          { word: '下', reading: 'した', meaning: '下面' },
+          { word: '地下', reading: 'ちか', meaning: '地下' },
+          { word: '下手', reading: 'へた', meaning: '笨拙' }
+        ]
+      },
+      {
+        id: 'p03', char: '中', meaning: '中間、裡面', radical: '丨', strokes: 4,
+        onyomi: ['チュウ'], kunyomi: ['なか'],
+        examples: [
+          { word: '中', reading: 'なか', meaning: '裡面' },
+          { word: '中学校', reading: 'ちゅうがっこう', meaning: '國中' },
+          { word: '一日中', reading: 'いちにちじゅう', meaning: '一整天' }
+        ]
+      },
+      {
+        id: 'p04', char: '大', meaning: '大', radical: '大', strokes: 3,
+        onyomi: ['ダイ', 'タイ'], kunyomi: ['おお.きい'],
+        examples: [
+          { word: '大きい', reading: 'おおきい', meaning: '大的' },
+          { word: '大学', reading: 'だいがく', meaning: '大學' },
+          { word: '大丈夫', reading: 'だいじょうぶ', meaning: '沒問題' }
+        ]
+      },
+      {
+        id: 'p05', char: '小', meaning: '小', radical: '小', strokes: 3,
+        onyomi: ['ショウ'], kunyomi: ['ちい.さい', 'こ'],
+        examples: [
+          { word: '小さい', reading: 'ちいさい', meaning: '小的' },
+          { word: '小学校', reading: 'しょうがっこう', meaning: '國小' },
+          { word: '小説', reading: 'しょうせつ', meaning: '小說' }
+        ]
+      },
+      {
+        id: 'p06', char: '山', meaning: '山', radical: '山', strokes: 3,
+        onyomi: ['サン'], kunyomi: ['やま'],
+        examples: [
+          { word: '山', reading: 'やま', meaning: '山' },
+          { word: '富士山', reading: 'ふじさん', meaning: '富士山' },
+          { word: '火山', reading: 'かざん', meaning: '火山' }
+        ]
+      },
+      {
+        id: 'p07', char: '川', meaning: '河川', radical: '川', strokes: 3,
+        onyomi: ['セン'], kunyomi: ['かわ'],
+        examples: [
+          { word: '川', reading: 'かわ', meaning: '河川' },
+          { word: '河川', reading: 'かせん', meaning: '河川' },
+          { word: '小川', reading: 'おがわ', meaning: '小溪' }
+        ]
+      },
+      {
+        id: 'p08', char: '田', meaning: '田地', radical: '田', strokes: 5,
+        onyomi: ['デン'], kunyomi: ['た'],
+        examples: [
+          { word: '田んぼ', reading: 'たんぼ', meaning: '稻田' },
+          { word: '水田', reading: 'すいでん', meaning: '水田' },
+          { word: '田舎', reading: 'いなか', meaning: '鄉下' }
+        ]
+      },
+      {
+        id: 'p09', char: '天', meaning: '天空、天氣', radical: '大', strokes: 4,
+        onyomi: ['テン'], kunyomi: ['あめ', 'あま'],
+        examples: [
+          { word: '天気', reading: 'てんき', meaning: '天氣' },
+          { word: '晴天', reading: 'せいてん', meaning: '晴天' },
+          { word: '天国', reading: 'てんごく', meaning: '天國' }
+        ]
+      },
+      {
+        id: 'p10', char: '空', meaning: '天空、空的', radical: '穴', strokes: 8,
+        onyomi: ['クウ'], kunyomi: ['そら', 'あ.く', 'から'],
+        examples: [
+          { word: '空', reading: 'そら', meaning: '天空' },
+          { word: '空気', reading: 'くうき', meaning: '空氣' },
+          { word: '空港', reading: 'くうこう', meaning: '機場' }
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'n4-batch3',
+    level: 'N4',
+    title: 'N4 漢字第 3 批',
+    desc: '教、育、病、者、院、建、物、計、画、由 — 10 個常用 N4 漢字',
+    kanji: [
+      {
+        id: 'q01', char: '教', meaning: '教導', radical: '攵', strokes: 11,
+        onyomi: ['キョウ'], kunyomi: ['おし.える', 'おそ.わる'],
+        examples: [
+          { word: '教える', reading: 'おしえる', meaning: '教導' },
+          { word: '教室', reading: 'きょうしつ', meaning: '教室' },
+          { word: '宗教', reading: 'しゅうきょう', meaning: '宗教' }
+        ]
+      },
+      {
+        id: 'q02', char: '育', meaning: '養育、成長', radical: '月', strokes: 8,
+        onyomi: ['イク'], kunyomi: ['そだ.てる', 'そだ.つ'],
+        examples: [
+          { word: '育てる', reading: 'そだてる', meaning: '養育' },
+          { word: '教育', reading: 'きょういく', meaning: '教育' },
+          { word: '体育', reading: 'たいいく', meaning: '體育' }
+        ]
+      },
+      {
+        id: 'q03', char: '病', meaning: '生病', radical: '疒', strokes: 10,
+        onyomi: ['ビョウ'], kunyomi: ['や.む'],
+        examples: [
+          { word: '病気', reading: 'びょうき', meaning: '生病' },
+          { word: '病院', reading: 'びょういん', meaning: '醫院' },
+          { word: '病人', reading: 'びょうにん', meaning: '病人' }
+        ]
+      },
+      {
+        id: 'q04', char: '者', meaning: '…的人', radical: '耂', strokes: 8,
+        onyomi: ['シャ'], kunyomi: ['もの'],
+        examples: [
+          { word: '医者', reading: 'いしゃ', meaning: '醫生' },
+          { word: '若者', reading: 'わかもの', meaning: '年輕人' },
+          { word: '記者', reading: 'きしゃ', meaning: '記者' }
+        ]
+      },
+      {
+        id: 'q05', char: '院', meaning: '機構、院', radical: '阝', strokes: 10,
+        onyomi: ['イン'], kunyomi: [],
+        examples: [
+          { word: '病院', reading: 'びょういん', meaning: '醫院' },
+          { word: '美容院', reading: 'びよういん', meaning: '美容院' },
+          { word: '大学院', reading: 'だいがくいん', meaning: '研究所' }
+        ]
+      },
+      {
+        id: 'q06', char: '建', meaning: '建造', radical: '廴', strokes: 9,
+        onyomi: ['ケン'], kunyomi: ['た.てる', 'た.つ'],
+        examples: [
+          { word: '建てる', reading: 'たてる', meaning: '建造' },
+          { word: '建物', reading: 'たてもの', meaning: '建築物' },
+          { word: '建築', reading: 'けんちく', meaning: '建築' }
+        ]
+      },
+      {
+        id: 'q07', char: '物', meaning: '物品', radical: '牛', strokes: 8,
+        onyomi: ['ブツ', 'モツ'], kunyomi: ['もの'],
+        examples: [
+          { word: '建物', reading: 'たてもの', meaning: '建築物' },
+          { word: '動物', reading: 'どうぶつ', meaning: '動物' },
+          { word: '食べ物', reading: 'たべもの', meaning: '食物' }
+        ]
+      },
+      {
+        id: 'q08', char: '計', meaning: '測量、計畫', radical: '言', strokes: 9,
+        onyomi: ['ケイ'], kunyomi: ['はか.る'],
+        examples: [
+          { word: '時計', reading: 'とけい', meaning: '時鐘' },
+          { word: '計画', reading: 'けいかく', meaning: '計畫' },
+          { word: '合計', reading: 'ごうけい', meaning: '合計' }
+        ]
+      },
+      {
+        id: 'q09', char: '画', meaning: '圖畫、劃分', radical: '田', strokes: 8,
+        onyomi: ['ガ', 'カク'], kunyomi: [],
+        examples: [
+          { word: '映画', reading: 'えいが', meaning: '電影' },
+          { word: '計画', reading: 'けいかく', meaning: '計畫' },
+          { word: '画家', reading: 'がか', meaning: '畫家' }
+        ]
+      },
+      {
+        id: 'q10', char: '由', meaning: '緣由', radical: '田', strokes: 5,
+        onyomi: ['ユ', 'ユウ'], kunyomi: ['よし'],
+        examples: [
+          { word: '自由', reading: 'じゆう', meaning: '自由' },
+          { word: '理由', reading: 'りゆう', meaning: '理由' },
+          { word: '由来', reading: 'ゆらい', meaning: '由來' }
+        ]
+      }
+    ]
+  },
 ];
