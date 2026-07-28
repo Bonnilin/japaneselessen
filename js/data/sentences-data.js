@@ -342,6 +342,338 @@ const GRAMMAR_LESSONS = [
       { question: '<ruby>彼<rt>かれ</rt></ruby>は<ruby>来<rt>こ</rt></ruby>___<ruby>思<rt>おも</rt></ruby>います。（我覺得他不會來）', options: ['ませんと', 'ないと', 'なくと', 'ずと'], answer: 1, explanation: '「〜と思います」前面要接普通形，所以用ない形。' }
     ]
   },
+  {
+    slug: 'kosoado',
+    level: 'N5',
+    title: 'こそあど｜這個那個怎麼說',
+    intro: 'こそあど系統是日文指示代名詞的規則：こ＝說話者附近、そ＝聽話者附近、あ＝雙方都遠、ど＝疑問。學會這組規則，「這個」「那個」「哪個」就都會用了。',
+    rules: [
+      { group: '指示代名詞（物）', examples: ['これ（這個）', 'それ（那個）', 'あれ（那個・更遠）', 'どれ（哪個）'] },
+      { group: '指示連體詞＋名詞', examples: ['この＋名詞（這個…）', 'その＋名詞（那個…）', 'あの＋名詞（那個…・更遠）', 'どの＋名詞（哪個…）'] },
+      { group: '場所', examples: ['ここ（這裡）', 'そこ（那裡）', 'あそこ（那裡・更遠）', 'どこ（哪裡）'] }
+    ],
+    usages: [
+      { pattern: 'これ／それ／あれ ＋ は ＋ 名詞です', meaning: '指出東西是什麼', example: { jp: 'これは<ruby>私<rt>わたし</rt></ruby>のスマホです。', zh: '這是我的手機。' } },
+      { pattern: 'この／その／あの ＋ 名詞', meaning: '修飾名詞，指定「這個/那個…」', example: { jp: 'あの<ruby>店<rt>みせ</rt></ruby>はとても<ruby>有名<rt>ゆうめい</rt></ruby>です。', zh: '那間店非常有名。' } },
+      { pattern: 'ここ／そこ／あそこ', meaning: '指場所', example: { jp: '<ruby>駅<rt>えき</rt></ruby>はあそこです。', zh: '車站在那裡。' } }
+    ],
+    quiz: [
+      { question: '說話者手上拿的東西該用？', options: ['これ', 'それ', 'あれ', 'どれ'], answer: 0, explanation: '「こ」系列指說話者身邊的東西。' },
+      { question: '修飾名詞（這台電腦）該用？', options: ['これパソコン', 'このパソコン', 'こんなパソコン', 'こういうパソコン'], answer: 1, explanation: '修飾名詞要用指示連體詞「この」，不能直接用「これ」加名詞。' },
+      { question: '「哪裡」怎麼說？', options: ['ここ', 'そこ', 'あそこ', 'どこ'], answer: 3, explanation: '「ど」系列表示疑問，どこ＝哪裡。' },
+      { question: '對方手上拿的東西該用？', options: ['これ', 'それ', 'あれ', 'どれ'], answer: 1, explanation: '「そ」系列指聽話者身邊的東西。' },
+      { question: '雙方都看得到但都有點遠的東西該用？', options: ['これ', 'それ', 'あれ', 'どれ'], answer: 2, explanation: '「あ」系列指雙方都有點距離的東西。' }
+    ]
+  },
+  {
+    slug: 'arimasu-imasu',
+    level: 'N5',
+    title: 'あります・います｜有生命跟沒生命的「有」',
+    intro: '日文的「有」要看主詞是不是有生命的：植物、無生物用「あります」，人和動物用「います」。這是初學者最容易搞混的文法點之一。',
+    rules: [],
+    usages: [
+      { pattern: '（無生物）が ＋ あります', meaning: '表示物品的存在', example: { jp: '<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>があります。', zh: '桌上有書。' } },
+      { pattern: '（人・動物）が ＋ います', meaning: '表示人或動物的存在', example: { jp: '<ruby>公園<rt>こうえん</rt></ruby>に<ruby>子<rt>こ</rt></ruby>どもがいます。', zh: '公園裡有小孩。' } },
+      { pattern: '場所 ＋ に ＋ 名詞 ＋ があります／います', meaning: '描述某個地方有什麼', example: { jp: '<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>先生<rt>せんせい</rt></ruby>がいます。', zh: '教室裡有老師。' } }
+    ],
+    quiz: [
+      { question: '「桌子」的存在該用？', options: ['あります', 'います'], answer: 0, explanation: '無生物用「あります」。' },
+      { question: '「貓」的存在該用？', options: ['あります', 'います'], answer: 1, explanation: '有生命的動物用「います」。' },
+      { question: '<ruby>部屋<rt>へや</rt></ruby>にテレビが___。（有電視）', options: ['あります', 'います', 'あった', 'いる'], answer: 0, explanation: '電視是無生物，用「あります」的禮貌現在形。' },
+      { question: '<ruby>庭<rt>にわ</rt></ruby>に<ruby>犬<rt>いぬ</rt></ruby>が___。（有一隻狗）', options: ['あります', 'います'], answer: 1, explanation: '狗是動物，用「います」。' },
+      { question: '<ruby>木<rt>き</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>猫<rt>ねこ</rt></ruby>が___。（樹下有貓）', options: ['あります', 'います'], answer: 1, explanation: '貓是動物，用「います」。' }
+    ]
+  },
+  {
+    slug: 'mo-particle',
+    level: 'N5',
+    title: '〜も｜也是、都的說法',
+    intro: '「も」用來表示「也」，取代原本的「は／が／を」等助詞出現在名詞後面，是初學者最先學到的基礎助詞之一。',
+    rules: [],
+    usages: [
+      { pattern: '名詞 ＋ も', meaning: '表示「…也…」，跟前面提到的內容一樣', example: { jp: '<ruby>私<rt>わたし</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>です。<ruby>彼<rt>かれ</rt></ruby>も<ruby>学生<rt>がくせい</rt></ruby>です。', zh: '我是學生。他也是學生。' } },
+      { pattern: '疑問詞 ＋ も ＋ 否定', meaning: '表示「都不…／都沒…」的全部否定', example: { jp: '<ruby>今日<rt>きょう</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>も<ruby>来<rt>き</rt></ruby>ませんでした。', zh: '今天誰都沒來。' } },
+      { pattern: '名詞A ＋ も ＋ 名詞B ＋ も', meaning: '表示「A跟B都…」', example: { jp: '<ruby>肉<rt>にく</rt></ruby>も<ruby>魚<rt>さかな</rt></ruby>も<ruby>好<rt>す</rt></ruby>きです。', zh: '肉跟魚都喜歡。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>私<rt>わたし</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>です。<ruby>彼<rt>かれ</rt></ruby>___<ruby>日本人<rt>にほんじん</rt></ruby>です。」', options: ['は', 'が', 'も', 'を'], answer: 2, explanation: '表示「他也是」用「も」。' },
+      { question: '表示「什麼都不吃」該怎麼說？', options: ['<ruby>何<rt>なに</rt></ruby>が<ruby>食<rt>た</rt></ruby>べません', '<ruby>何<rt>なに</rt></ruby>も<ruby>食<rt>た</rt></ruby>べません', '<ruby>何<rt>なに</rt></ruby>は<ruby>食<rt>た</rt></ruby>べません', '<ruby>何<rt>なに</rt></ruby>を<ruby>食<rt>た</rt></ruby>べません'], answer: 1, explanation: '「疑問詞＋も＋否定」表示全部否定。' },
+      { question: '「<ruby>猫<rt>ねこ</rt></ruby>___<ruby>犬<rt>いぬ</rt></ruby>___<ruby>好<rt>す</rt></ruby>きです。」（貓跟狗都喜歡）', options: ['は…は', 'も…も', 'が…が', 'を…を'], answer: 1, explanation: '「AもBも」表示兩者都…' },
+      { question: '<ruby>兄<rt>あに</rt></ruby>は<ruby>大学生<rt>だいがくせい</rt></ruby>です。<ruby>姉<rt>あね</rt></ruby>___<ruby>大学生<rt>だいがくせい</rt></ruby>です。', options: ['は', 'が', 'も', 'に'], answer: 2, explanation: '和前面提到的一樣，用「も」。' }
+    ]
+  },
+  {
+    slug: 'tai-form',
+    level: 'N5',
+    title: '〜たいです｜想要做…',
+    intro: '想表達「想做某事」，把動詞ます形的「ます」去掉，加上「たい」，就完成了。「たい」本身會像い形容詞一樣變化。',
+    rules: [
+      { group: '動詞ます形（去ます）＋たい', examples: ['<ruby>飲<rt>の</rt></ruby>みます → <ruby>飲<rt>の</rt></ruby>みたい', '<ruby>食<rt>た</rt></ruby>べます → <ruby>食<rt>た</rt></ruby>べたい', '<ruby>行<rt>い</rt></ruby>きます → <ruby>行<rt>い</rt></ruby>きたい'] }
+    ],
+    usages: [
+      { pattern: '動詞たい形 ＋ です', meaning: '表示說話者自己「想做…」', example: { jp: '<ruby>沖縄<rt>おきなわ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいです。', zh: '想去沖繩。' } },
+      { pattern: '動詞たい形 ＋ くないです', meaning: '表示「不想做…」（たい是い形容詞變化）', example: { jp: '<ruby>今日<rt>きょう</rt></ruby>は<ruby>働<rt>はたら</rt></ruby>きたくないです。', zh: '今天不想工作。' } },
+      { pattern: '〜が／を ＋ たいです', meaning: '對象可以用「が」也可以用「を」', example: { jp: '<ruby>冷<rt>つめ</rt></ruby>たい<ruby>水<rt>みず</rt></ruby>が<ruby>飲<rt>の</rt></ruby>みたいです。', zh: '想喝冰水。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>食<rt>た</rt></ruby>べます」的たい形是？', options: ['<ruby>食<rt>た</rt></ruby>べたい', '<ruby>食<rt>た</rt></ruby>べますたい', '<ruby>食<rt>た</rt></ruby>べたいます', '<ruby>食<rt>た</rt></ruby>べたく'], answer: 0, explanation: '去掉ます加上たい。' },
+      { question: '「たい」的否定該像哪種詞一樣變化？', options: ['な形容詞', 'い形容詞', '動詞', '名詞'], answer: 1, explanation: '「たい」結尾是い，否定變化跟い形容詞一樣：たい→たくない。' },
+      { question: '<ruby>寿司<rt>すし</rt></ruby>が___。（想吃壽司）', options: ['<ruby>食<rt>た</rt></ruby>べたい', '<ruby>食<rt>た</rt></ruby>べたいます', '<ruby>食<rt>た</rt></ruby>べますたい', '<ruby>食<rt>た</rt></ruby>べたく'], answer: 0, explanation: '「が＋たいです」表示想要的對象。' },
+      { question: '<ruby>今日<rt>きょう</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>にも___。（不想見任何人）', options: ['<ruby>会<rt>あ</rt></ruby>いたい', '<ruby>会<rt>あ</rt></ruby>いたくない', '<ruby>会<rt>あ</rt></ruby>いませんたい', '<ruby>会<rt>あ</rt></ruby>うたくない'], answer: 1, explanation: 'たい形的否定是「たくない」。' },
+      { question: '「<ruby>行<rt>い</rt></ruby>きます」的たい形是？', options: ['<ruby>行<rt>い</rt></ruby>たい', '<ruby>行<rt>い</rt></ruby>きたい', '<ruby>行<rt>い</rt></ruby>くたい', '<ruby>行<rt>い</rt></ruby>きますたい'], answer: 1, explanation: '去掉ます加たい：行き+たい。' }
+    ]
+  },
+  {
+    slug: 'kara-made',
+    level: 'N5',
+    title: '〜から〜まで｜從…到…',
+    intro: '「から」表示起點（從…），「まで」表示終點（到…），可以用在時間也可以用在地點，是描述範圍最基本的說法。',
+    rules: [],
+    usages: [
+      { pattern: '時間 ＋ から ＋ 時間 ＋ まで', meaning: '表示時間的範圍', example: { jp: '<ruby>九時<rt>くじ</rt></ruby>から<ruby>五時<rt>ごじ</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>きます。', zh: '從九點工作到五點。' } },
+      { pattern: '場所 ＋ から ＋ 場所 ＋ まで', meaning: '表示地點的範圍', example: { jp: '<ruby>家<rt>いえ</rt></ruby>から<ruby>駅<rt>えき</rt></ruby>まで<ruby>十分<rt>じゅっぷん</rt></ruby>かかります。', zh: '從家裡到車站要花十分鐘。' } },
+      { pattern: '〜から（原因）', meaning: '「から」也可以表示原因「因為…」', example: { jp: '<ruby>危<rt>あぶ</rt></ruby>ないから、<ruby>気<rt>き</rt></ruby>をつけてください。', zh: '因為很危險，請小心。' } }
+    ],
+    quiz: [
+      { question: '<ruby>月曜日<rt>げつようび</rt></ruby>___<ruby>金曜日<rt>きんようび</rt></ruby>___<ruby>働<rt>はたら</rt></ruby>きます。（從星期一工作到星期五）', options: ['から…まで', 'まで…から', 'に…で', 'を…に'], answer: 0, explanation: '起點用「から」，終點用「まで」。' },
+      { question: '「から」除了表示起點，還可以表示什麼？', options: ['目的', '原因', '方法', '場所'], answer: 1, explanation: '「から」句尾也常表示原因「因為…」。' },
+      { question: '<ruby>台北<rt>たいぺい</rt></ruby>___<ruby>高雄<rt>たかお</rt></ruby>___、<ruby>新幹線<rt>しんかんせん</rt></ruby>で<ruby>行<rt>い</rt></ruby>きます。', options: ['から…まで', 'まで…から', 'へ…に', 'で…に'], answer: 0, explanation: '從台北到高雄：から…まで。' }
+    ]
+  },
+  {
+    slug: 'question-words',
+    level: 'N5',
+    title: '疑問詞｜何・誰・どこ・いつ・どう',
+    intro: '疑問詞是問問題時的核心單字，這一課整理最常用的幾個疑問詞，讓你能問出各種問題。',
+    rules: [],
+    usages: [
+      { pattern: '何（なに／なん）', meaning: '問「什麼」', example: { jp: 'これは<ruby>何<rt>なん</rt></ruby>ですか。', zh: '這是什麼？' } },
+      { pattern: '誰（だれ）', meaning: '問「誰」', example: { jp: 'あの<ruby>人<rt>ひと</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>ですか。', zh: '那個人是誰？' } },
+      { pattern: 'どこ／いつ／どう', meaning: '分別問「哪裡」「什麼時候」「怎麼樣」', example: { jp: '<ruby>旅行<rt>りょこう</rt></ruby>はどうでしたか。', zh: '旅行怎麼樣？' } }
+    ],
+    quiz: [
+      { question: '問「這是什麼」該用哪個疑問詞？', options: ['誰', '何', 'どこ', 'いつ'], answer: 1, explanation: '問東西用「何」。' },
+      { question: '問「生日是什麼時候」該用？', options: ['誰', 'どこ', 'いつ', 'どう'], answer: 2, explanation: '問時間點用「いつ」。' },
+      { question: '「あなたはどこ___<ruby>来<rt>き</rt></ruby>ましたか。」（你從哪裡來的）', options: ['が', 'を', 'から', 'まで'], answer: 2, explanation: '「どこから」表示「從哪裡」。' },
+      { question: '問對方感想「電影怎麼樣？」該用？', options: ['何', '誰', 'どう', 'いつ'], answer: 2, explanation: '問感想、狀態用「どう」。' }
+    ]
+  },
+  {
+    slug: 'toki',
+    level: 'N5',
+    title: '〜とき｜當…的時候',
+    intro: '「とき」表示「…的時候」，前面可以接動詞、形容詞或名詞，是描述時間點很常用的句型。',
+    rules: [],
+    usages: [
+      { pattern: '動詞辞書形／た形 ＋ とき', meaning: '做某動作、或做完某動作的時候', example: { jp: '<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くとき、パスポートが<ruby>要<rt>い</rt></ruby>ります。', zh: '去日本的時候，需要護照。' } },
+      { pattern: 'い形容詞 ＋ とき', meaning: '某種狀態的時候', example: { jp: '<ruby>忙<rt>いそが</rt></ruby>しいとき、あまり<ruby>寝<rt>ね</rt></ruby>られません。', zh: '忙的時候不太能睡。' } },
+      { pattern: 'な形容詞・名詞 ＋ の ＋ とき', meaning: 'な形容詞或名詞接とき要加「の」', example: { jp: '<ruby>子<rt>こ</rt></ruby>どものとき、よく<ruby>川<rt>かわ</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>びました。', zh: '小時候常常在河邊玩。' } }
+    ],
+    quiz: [
+      { question: '<ruby>暇<rt>ひま</rt></ruby>___とき、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ます。（空閒的時候）', options: ['<ruby>暇<rt>ひま</rt></ruby>', '<ruby>暇<rt>ひま</rt></ruby>な', '<ruby>暇<rt>ひま</rt></ruby>の', '<ruby>暇<rt>ひま</rt></ruby>だ'], answer: 1, explanation: 'な形容詞接とき要加「な」。' },
+      { question: '<ruby>学生<rt>がくせい</rt></ruby>___とき、よく<ruby>勉強<rt>べんきょう</rt></ruby>しました。（學生時期）', options: ['<ruby>学生<rt>がくせい</rt></ruby>', '<ruby>学生<rt>がくせい</rt></ruby>な', '<ruby>学生<rt>がくせい</rt></ruby>の', '<ruby>学生<rt>がくせい</rt></ruby>だ'], answer: 2, explanation: '名詞接とき要加「の」。' },
+      { question: '<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る___、<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>きました。（出門的時候）', options: ['とき', 'たとき', 'ながら', 'のに'], answer: 0, explanation: '動作尚未發生時用辭書形＋とき。' }
+    ]
+  },
+  {
+    slug: 'nagara',
+    level: 'N5',
+    title: '〜ながら｜一邊…一邊…',
+    intro: '「ながら」用來表示同時做兩件事，前面接動詞的ます形（去掉ます），是簡單又好用的句型。',
+    rules: [
+      { group: '動詞ます形（去ます）＋ながら', examples: ['<ruby>聞<rt>き</rt></ruby>きます → <ruby>聞<rt>き</rt></ruby>きながら', '<ruby>食<rt>た</rt></ruby>べます → <ruby>食<rt>た</rt></ruby>べながら'] }
+    ],
+    usages: [
+      { pattern: '動詞ながら形 ＋ 動詞', meaning: '同時做兩個動作（主要動作放後面）', example: { jp: '<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きながら、<ruby>勉強<rt>べんきょう</rt></ruby>します。', zh: '一邊聽音樂一邊唸書。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>食<rt>た</rt></ruby>べます」的ながら形是？', options: ['<ruby>食<rt>た</rt></ruby>べるながら', '<ruby>食<rt>た</rt></ruby>べながら', '<ruby>食<rt>た</rt></ruby>べますながら', '<ruby>食<rt>た</rt></ruby>べたながら'], answer: 1, explanation: '去掉ます加ながら。' },
+      { question: 'テレビを___、ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。（一邊看電視一邊吃飯）', options: ['<ruby>見<rt>み</rt></ruby>て', '<ruby>見<rt>み</rt></ruby>ながら', '<ruby>見<rt>み</rt></ruby>た', '<ruby>見<rt>み</rt></ruby>る'], answer: 1, explanation: '同時進行的動作用「ながら」。' },
+      { question: 'ながら句型中，哪個動作是主要動作？', options: ['前面的', '後面的', '都一樣重要', '沒有分別'], answer: 1, explanation: 'ながら前面是附帶動作，後面才是主要動作。' }
+    ]
+  },
+  {
+    slug: 'te-kara',
+    level: 'N5',
+    title: '〜てから｜做了…之後',
+    intro: '「てから」強調動作的先後順序，比單純的「て」更明確表達「先做完A，再做B」。',
+    rules: [],
+    usages: [
+      { pattern: '動詞て形 ＋ から、〜', meaning: '先做完前面的動作之後才做後面的事', example: { jp: '<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。', zh: '洗手之後再吃飯。' } }
+    ],
+    quiz: [
+      { question: '「てから」強調的是什麼？', options: ['原因', '動作的先後順序', '推測', '請求'], answer: 1, explanation: '「てから」強調先做A再做B的順序關係。' },
+      { question: '<ruby>宿題<rt>しゅくだい</rt></ruby>を___から、テレビを<ruby>見<rt>み</rt></ruby>ます。（做完作業之後看電視）', options: ['する', 'して', 'した', 'します'], answer: 1, explanation: '前面要接動詞的て形。' }
+    ]
+  },
+  {
+    slug: 'comparison',
+    level: 'N5',
+    title: '比較｜〜より〜ほうが',
+    intro: '比較兩件事物時，用「AよりBのほうが〜」表示「B比A更…」，這一課也順便學最高級「一番」的用法。',
+    rules: [],
+    usages: [
+      { pattern: 'A ＋ より ＋ B ＋ のほうが ＋ 形容詞', meaning: '表示「B比A更…」', example: { jp: '<ruby>電車<rt>でんしゃ</rt></ruby>より<ruby>飛行機<rt>ひこうき</rt></ruby>のほうが<ruby>速<rt>はや</rt></ruby>いです。', zh: '飛機比電車快。' } },
+      { pattern: '〜の中で、〜が一番〜', meaning: '表示最高級「在…之中，…最…」', example: { jp: '<ruby>果物<rt>くだもの</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、りんごが<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きです。', zh: '在水果之中，我最喜歡蘋果。' } }
+    ],
+    quiz: [
+      { question: '「AよりBのほうが〜」是什麼意思？', options: ['A比B更…', 'B比A更…', 'A跟B一樣', '都不是'], answer: 1, explanation: '比較的重點在「のほうが」前面的那一個，表示它更…' },
+      { question: '<ruby>犬<rt>いぬ</rt></ruby>___<ruby>猫<rt>ねこ</rt></ruby>のほうが<ruby>好<rt>す</rt></ruby>きです。（比起狗，更喜歡貓）', options: ['より', 'から', 'まで', 'ほど'], answer: 0, explanation: '比較的基準用「より」。' },
+      { question: 'クラスの<ruby>中<rt>なか</rt></ruby>で、<ruby>田中<rt>たなか</rt></ruby>さんが___<ruby>背<rt>せ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>いです。（在班上最高）', options: ['とても', '一番', 'もっと', 'より'], answer: 1, explanation: '最高級用「一番」。' }
+    ]
+  },
+  {
+    slug: 'sou-desu',
+    level: 'N4',
+    title: '〜そうです｜聽說…／看起來…',
+    intro: '「そうです」有兩種用法：接在普通形後面表示「聽說」（傳聞），接在動詞ます形／形容詞語幹後面表示「看起來」（樣態），這一課分清楚兩者。',
+    rules: [
+      { group: '傳聞｜普通形＋そうです', examples: ['<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る → <ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るそうです', '<ruby>美味<rt>おい</rt></ruby>しい → <ruby>美味<rt>おい</rt></ruby>しいそうです'] },
+      { group: '樣態｜動詞ます形／い形容詞語幹＋そうです', examples: ['<ruby>降<rt>ふ</rt></ruby>ります → <ruby>降<rt>ふ</rt></ruby>りそうです', '<ruby>美味<rt>おい</rt></ruby>しい → <ruby>美味<rt>おい</rt></ruby>しそうです（去い）'] }
+    ],
+    usages: [
+      { pattern: '普通形 ＋ そうです（傳聞）', meaning: '聽說…（轉述別人告訴你的資訊）', example: { jp: '<ruby>天気予報<rt>てんきよほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>だそうです。', zh: '根據天氣預報，聽說明天會下雨。' } },
+      { pattern: '動詞ます形／い形容詞語幹 ＋ そうです（樣態）', meaning: '看起來…（憑外觀判斷）', example: { jp: 'このケーキは<ruby>美味<rt>おい</rt></ruby>しそうです。', zh: '這個蛋糕看起來很好吃。' } }
+    ],
+    quiz: [
+      { question: '「聽說」該用哪種そうです？', options: ['傳聞：普通形＋そうです', '樣態：ます形＋そうです'], answer: 0, explanation: '傳聞用普通形接續。' },
+      { question: '「<ruby>美味<rt>おい</rt></ruby>しい」的樣態そうです是？', options: ['<ruby>美味<rt>おい</rt></ruby>しいそうです', '<ruby>美味<rt>おい</rt></ruby>しそうです', '<ruby>美味<rt>おい</rt></ruby>しくそうです', '<ruby>美味<rt>おい</rt></ruby>しさそうです'], answer: 1, explanation: '樣態用法要去掉語尾的「い」。' },
+      { question: '<ruby>雨<rt>あめ</rt></ruby>が___そうです。（看起來要下雨了）', options: ['<ruby>降<rt>ふ</rt></ruby>る', '<ruby>降<rt>ふ</rt></ruby>り', '<ruby>降<rt>ふ</rt></ruby>って', '<ruby>降<rt>ふ</rt></ruby>った'], answer: 1, explanation: '樣態用法接ます形（去ます）。' }
+    ]
+  },
+  {
+    slug: 'you-desu',
+    level: 'N4',
+    title: '〜ようです｜看起來、好像…',
+    intro: '「ようです」用來表達說話者根據觀察、感覺做出的推測，語感比「そうです」更委婉、更有根據。',
+    rules: [],
+    usages: [
+      { pattern: '普通形 ＋ ようです', meaning: '根據觀察或跡象做出的推測', example: { jp: '<ruby>誰<rt>だれ</rt></ruby>もいないようです。', zh: '好像沒有人在的樣子。' } },
+      { pattern: 'まるで〜ようです', meaning: '表示比喻「簡直就像…一樣」', example: { jp: 'まるで<ruby>夢<rt>ゆめ</rt></ruby>のようです。', zh: '簡直就像做夢一樣。' } }
+    ],
+    quiz: [
+      { question: '「ようです」主要用來表達什麼？', options: ['命令', '根據觀察的推測', '邀請', '禁止'], answer: 1, explanation: '「ようです」是說話者根據所見所聞做出的推測。' },
+      { question: '<ruby>彼<rt>かれ</rt></ruby>は<ruby>忙<rt>いそが</rt></ruby>しい___です。（他好像很忙的樣子）', options: ['よう', 'そう', 'はず', 'こと'], answer: 0, explanation: '根據觀察做出的推測用「ようです」。' }
+    ]
+  },
+  {
+    slug: 'noni',
+    level: 'N4',
+    title: '〜のに｜明明…卻…',
+    intro: '「のに」表示「明明…卻…」，帶有意外、不滿或惋惜的語氣，是表達情緒轉折時很好用的句型。',
+    rules: [],
+    usages: [
+      { pattern: '普通形 ＋ のに', meaning: '表示結果與預期相反，帶有不滿或驚訝', example: { jp: '<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>したのに、テストに<ruby>落<rt>お</rt></ruby>ちました。', zh: '明明很努力唸書了，卻沒通過考試。' } },
+      { pattern: 'な形容詞・名詞 ＋ なのに', meaning: 'な形容詞或名詞接續時要加「な」', example: { jp: '<ruby>休<rt>やす</rt></ruby>みなのに、<ruby>仕事<rt>しごと</rt></ruby>があります。', zh: '明明是休假，卻有工作。' } }
+    ],
+    quiz: [
+      { question: '「のに」帶有什麼語氣？', options: ['純粹敘述', '意外、不滿或惋惜', '命令', '邀請'], answer: 1, explanation: '「のに」帶有和預期相反的情緒轉折。' },
+      { question: '<ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>み___のに、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っています。（明明是假日卻在下雨）', options: ['（不加任何字）', 'な', 'の', 'だ'], answer: 1, explanation: '名詞接のに要加「な」：休みなのに。' }
+    ]
+  },
+  {
+    slug: 'te-oku',
+    level: 'N4',
+    title: '〜ておく｜事先做好準備',
+    intro: '「ておく」表示為了以後方便，事先做好某件事，口語常縮約成「〜とく」。',
+    rules: [],
+    usages: [
+      { pattern: '動詞て形 ＋ おきます', meaning: '事先做好準備，為了以後方便', example: { jp: '<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に、<ruby>資料<rt>しりょう</rt></ruby>を<ruby>準備<rt>じゅんび</rt></ruby>しておきます。', zh: '開會前先把資料準備好。' } },
+      { pattern: '動詞て形 ＋ おいてください', meaning: '請對方事先做好某件事', example: { jp: '<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。', zh: '請先把窗戶關好。' } }
+    ],
+    quiz: [
+      { question: '「ておく」表示什麼？', options: ['正在做', '事先做好準備', '後悔', '禁止'], answer: 1, explanation: '「ておく」表示為了以後方便，事先做好某件事。' },
+      { question: '<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>って___。（先買好飲料）', options: ['おきます', 'います', 'いました', 'しまいます'], answer: 0, explanation: '「て形＋おきます」表示事先準備好。' }
+    ]
+  },
+  {
+    slug: 'te-shimau',
+    level: 'N4',
+    title: '〜てしまう｜做完了、不小心…',
+    intro: '「てしまう」表示動作徹底完成，或帶有「不小心做了…」的懊悔語氣，口語常縮約成「〜ちゃう／〜じゃう」。',
+    rules: [],
+    usages: [
+      { pattern: '動詞て形 ＋ しまいます（完成）', meaning: '表示徹底做完某件事', example: { jp: '<ruby>宿題<rt>しゅくだい</rt></ruby>をもう<ruby>全部<rt>ぜんぶ</rt></ruby>やってしまいました。', zh: '作業已經全部做完了。' } },
+      { pattern: '動詞て形 ＋ しまいます（後悔）', meaning: '表示不小心做了不該做的事，帶有懊悔語氣', example: { jp: '<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>本<rt>ほん</rt></ruby>をなくしてしまいました。', zh: '把重要的書弄丟了。' } }
+    ],
+    quiz: [
+      { question: '「てしまう」的口語縮約形是？', options: ['〜ちゃう', '〜とく', '〜ながら', '〜のに'], answer: 0, explanation: '「てしまう」口語常說成「ちゃう」。' },
+      { question: '<ruby>財布<rt>さいふ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れて___。（不小心忘記帶錢包了）', options: ['おきます', 'しまいました', 'いました', 'あります'], answer: 1, explanation: '不小心做了懊悔的事用「てしまいました」。' }
+    ]
+  },
+  {
+    slug: 'sugiru',
+    level: 'N4',
+    title: '〜すぎる｜太過…了',
+    intro: '「すぎる」接在動詞ます形或形容詞語幹後面，表示程度「太…了」，帶有負面、超出常理的語感。',
+    rules: [
+      { group: '動詞ます形（去ます）＋すぎる', examples: ['<ruby>食<rt>た</rt></ruby>べます → <ruby>食<rt>た</rt></ruby>べすぎる', '<ruby>飲<rt>の</rt></ruby>みます → <ruby>飲<rt>の</rt></ruby>みすぎる'] },
+      { group: 'い形容詞（去い）・な形容詞＋すぎる', examples: ['<ruby>高<rt>たか</rt></ruby>い → <ruby>高<rt>たか</rt></ruby>すぎる', '<ruby>静<rt>しず</rt></ruby>か → <ruby>静<rt>しず</rt></ruby>かすぎる'] }
+    ],
+    usages: [
+      { pattern: '動詞ます形 ＋ すぎる', meaning: '某個動作做得太過度', example: { jp: '<ruby>昨日<rt>きのう</rt></ruby>、お<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みすぎました。', zh: '昨天酒喝太多了。' } },
+      { pattern: '形容詞語幹 ＋ すぎる', meaning: '某種狀態太過度', example: { jp: 'この<ruby>服<rt>ふく</rt></ruby>は<ruby>高<rt>たか</rt></ruby>すぎます。', zh: '這件衣服太貴了。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>食<rt>た</rt></ruby>べます」加上すぎる是？', options: ['<ruby>食<rt>た</rt></ruby>べますすぎる', '<ruby>食<rt>た</rt></ruby>べすぎる', '<ruby>食<rt>た</rt></ruby>べるすぎる', '<ruby>食<rt>た</rt></ruby>べてすぎる'], answer: 1, explanation: '去掉ます直接加すぎる。' },
+      { question: '「<ruby>高<rt>たか</rt></ruby>い」加上すぎる是？', options: ['<ruby>高<rt>たか</rt></ruby>いすぎる', '<ruby>高<rt>たか</rt></ruby>すぎる', '<ruby>高<rt>たか</rt></ruby>くすぎる', '<ruby>高<rt>たか</rt></ruby>さすぎる'], answer: 1, explanation: 'い形容詞去掉い加すぎる。' },
+      { question: '<ruby>働<rt>はたら</rt></ruby>き___て、<ruby>疲<rt>つか</rt></ruby>れました。（工作太累了）', options: ['すぎ', 'すぎる', 'すぎた', 'すぎます'], answer: 0, explanation: '「すぎる」的て形是「すぎて」，前面接すぎ。' }
+    ]
+  },
+  {
+    slug: 'yasui-nikui',
+    level: 'N4',
+    title: '〜やすい・〜にくい｜容易・難以…',
+    intro: '「やすい」表示「容易…」，「にくい」表示「難以…」，兩者都接在動詞ます形後面，用來評論一件事做起來的難易度。',
+    rules: [
+      { group: '動詞ます形（去ます）＋やすい／にくい', examples: ['<ruby>書<rt>か</rt></ruby>きます → <ruby>書<rt>か</rt></ruby>きやすい', '<ruby>読<rt>よ</rt></ruby>みます → <ruby>読<rt>よ</rt></ruby>みにくい'] }
+    ],
+    usages: [
+      { pattern: '動詞ます形 ＋ やすいです', meaning: '表示「容易做…」，也可指東西好用', example: { jp: 'このペンは<ruby>書<rt>か</rt></ruby>きやすいです。', zh: '這支筆很好寫。' } },
+      { pattern: '動詞ます形 ＋ にくいです', meaning: '表示「難以做…」，做起來有困難', example: { jp: 'この<ruby>字<rt>じ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さくて<ruby>読<rt>よ</rt></ruby>みにくいです。', zh: '這個字太小很難讀。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>書<rt>か</rt></ruby>きます」加上やすい是？', options: ['<ruby>書<rt>か</rt></ruby>きますやすい', '<ruby>書<rt>か</rt></ruby>きやすい', '<ruby>書<rt>か</rt></ruby>くやすい', '<ruby>書<rt>か</rt></ruby>いてやすい'], answer: 1, explanation: '去掉ます加やすい。' },
+      { question: '「やすい」與「にくい」哪一個表示「難以…」？', options: ['やすい', 'にくい'], answer: 1, explanation: '「にくい」表示困難、不容易。' },
+      { question: 'この<ruby>靴<rt>くつ</rt></ruby>は<ruby>歩<rt>ある</rt></ruby>き___です。（這雙鞋很好走）', options: ['やすい', 'にくい'], answer: 0, explanation: '「容易走」用「やすい」。' }
+    ]
+  },
+  {
+    slug: 'ba-conditional',
+    level: 'N4',
+    title: '〜ば｜另一種「如果」',
+    intro: '「ば形」是另一種表達假設的方式，常用在諺語、一般真理，或表達「越…越…」的句型。',
+    rules: [
+      { group: '第一類動詞｜語尾う段 → え段＋ば', examples: ['<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>けば', '<ruby>読<rt>よ</rt></ruby>む → <ruby>読<rt>よ</rt></ruby>めば'] },
+      { group: '第二類動詞｜去る＋れば', examples: ['<ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べれば', '<ruby>見<rt>み</rt></ruby>る → <ruby>見<rt>み</rt></ruby>れば'] },
+      { group: 'い形容詞｜去い＋ければ', examples: ['<ruby>安<rt>やす</rt></ruby>い → <ruby>安<rt>やす</rt></ruby>ければ'] }
+    ],
+    usages: [
+      { pattern: '〜ば、〜', meaning: '表示一般性的假設或真理', example: { jp: '<ruby>春<rt>はる</rt></ruby>になれば、<ruby>桜<rt>さくら</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>きます。', zh: '一到春天，櫻花就會開。' } },
+      { pattern: '〜ば〜ほど', meaning: '表示「越…越…」', example: { jp: '<ruby>練習<rt>れんしゅう</rt></ruby>すればするほど、<ruby>上手<rt>じょうず</rt></ruby>になります。', zh: '越練習就會越厲害。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>読<rt>よ</rt></ruby>む」的ば形是？', options: ['<ruby>読<rt>よ</rt></ruby>むば', '<ruby>読<rt>よ</rt></ruby>めば', '<ruby>読<rt>よ</rt></ruby>みば', '<ruby>読<rt>よ</rt></ruby>んば'], answer: 1, explanation: '第一類動詞：う段改成え段加「ば」。' },
+      { question: '「<ruby>安<rt>やす</rt></ruby>い」的ば形是？', options: ['<ruby>安<rt>やす</rt></ruby>いば', '<ruby>安<rt>やす</rt></ruby>ければ', '<ruby>安<rt>やす</rt></ruby>くば', '<ruby>安<rt>やす</rt></ruby>えば'], answer: 1, explanation: 'い形容詞：去掉い加ければ。' },
+      { question: '「〜ば〜ほど」是什麼意思？', options: ['只要…就…', '越…越…', '雖然…但是…', '因為…所以…'], answer: 1, explanation: '「〜ば〜ほど」表示程度隨之增加：越…越…' }
+    ]
+  },
+  {
+    slug: 'ni-tsuite',
+    level: 'N4',
+    title: '〜について｜關於…',
+    intro: '「について」用來引出談論的主題，等於中文的「關於…」，是報告、討論時很常用的句型。',
+    rules: [],
+    usages: [
+      { pattern: '名詞 ＋ について', meaning: '表示「關於…」，引出談論的主題', example: { jp: '<ruby>日本<rt>にほん</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>について<ruby>調<rt>しら</rt></ruby>べています。', zh: '正在調查關於日本文化的事。' } },
+      { pattern: '名詞 ＋ についての ＋ 名詞', meaning: '修飾名詞時要加「の」', example: { jp: 'これは<ruby>環境<rt>かんきょう</rt></ruby>についての<ruby>本<rt>ほん</rt></ruby>です。', zh: '這是一本關於環境的書。' } }
+    ],
+    quiz: [
+      { question: '「について」的意思是？', options: ['為了', '關於', '除了', '根據'], answer: 1, explanation: '「について」表示「關於…」。' },
+      { question: '<ruby>将来<rt>しょうらい</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>___、<ruby>話<rt>はな</rt></ruby>しましょう。（來聊聊關於未來的夢想吧）', options: ['について', 'にとって', 'にたいして', 'によって'], answer: 0, explanation: '引出談論主題用「について」。' },
+      { question: 'これは<ruby>歴史<rt>れきし</rt></ruby>___<ruby>映画<rt>えいが</rt></ruby>です。（這是一部關於歷史的電影）', options: ['について', 'についての', 'につく', 'による'], answer: 1, explanation: '修飾後面的名詞要用「についての」。' }
+    ]
+  },
 ];
 
 /* 動畫風格句子填空（原創例句，模仿熱血少年漫畫常見台詞語感，非引用特定作品） */
