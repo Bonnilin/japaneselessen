@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>五十音表｜ニホンゴ・クエスト</title>
+<title>片假名練習｜ニホンゴ・クエスト</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
@@ -17,8 +17,8 @@
     </a>
     <nav class="main-nav">
       <a href="index.html">首頁</a>
-      <a href="gojuon.html" aria-current="page">五十音</a>
-      <a href="katakana.html">片假名練習</a>
+      <a href="gojuon.html">五十音</a>
+      <a href="katakana.html" aria-current="page">片假名練習</a>
       <a href="lesson-te-form.html">文法：て形</a>
       <a href="lesson-passive.html">文法：受身形</a>
       <a href="vocab.html">單字閃卡</a>
@@ -30,15 +30,15 @@
 
 <main>
   <div class="section-title">
-    <span class="bolt">🈴</span>
-    <h2>五十音表</h2>
+    <span class="bolt">🈁</span>
+    <h2>片假名 50 音表</h2>
   </div>
   <div class="panel accent-teal">
-    <span class="sfx-flourish">パラパラッ!!</span>
-    <p>點擊任一個假名，瀏覽器就會唸出它的發音。先熟悉清音，再挑戰濁音、半濁音跟拗音，最後用小測驗驗收成果！</p>
+    <span class="sfx-flourish">ビシッ!!</span>
+    <p>片假名主要用來寫外來語、擬聲擬態語跟人名地名。點擊任一個字瀏覽器就會唸出發音，練熟表格後別忘了往下挑戰片假名單字閃卡！</p>
   </div>
 
-  <section id="gojuon-table-section">
+  <section id="katakana-table-section">
     <div class="gojuon-tools">
       <button class="kana-tab active" data-category="seion">清音</button>
       <button class="kana-tab" data-category="dakuten">濁音</button>
@@ -46,20 +46,38 @@
       <button class="kana-tab" data-category="youon">拗音</button>
     </div>
     <div class="panel">
-      <div class="gojuon-grid jp" id="gojuon-grid"></div>
+      <div class="gojuon-grid jp" id="katakana-grid"></div>
     </div>
     <div class="btn-row">
-      <button class="btn pink" id="gojuon-quiz-btn">📝 開始五十音小測驗（隨機10題）</button>
-      <a class="btn purple" href="katakana.html">🈁 片假名練習</a>
+      <button class="btn pink" id="katakana-quiz-btn">📝 開始片假名小測驗（隨機10題）</button>
     </div>
   </section>
 
-  <section id="gojuon-quiz" style="display:none;">
-    <div class="panel accent-pink" id="gojuon-quiz-container"></div>
+  <section id="katakana-quiz" style="display:none;">
+    <div class="panel accent-pink" id="katakana-quiz-container"></div>
     <div class="btn-row">
-      <button class="btn secondary" id="gojuon-back-btn">← 回到五十音表</button>
+      <button class="btn secondary" id="katakana-back-btn">← 回到片假名表</button>
     </div>
   </section>
+
+  <div class="stripe-divider"></div>
+
+  <div class="section-title">
+    <span class="bolt">🃏</span>
+    <h2>片假名單字閃卡</h2>
+  </div>
+
+  <div class="panel accent-purple">
+    <span class="sfx-flourish">キラーン✨</span>
+    <p>18 個生活常用外來語單字，點卡片翻面查看意思，依熟悉程度分級後系統會自動安排下次複習時間（SRS 間隔重複），跟單字閃卡頁邏輯一樣。</p>
+    <div class="deck-status" id="deck-status"></div>
+  </div>
+
+  <div class="flash-stage" id="flash-stage"></div>
+
+  <div class="btn-row" style="justify-content:center;">
+    <button class="btn secondary" id="practice-all-btn">🔁 不管進度，直接練習全部單字</button>
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -67,9 +85,12 @@
 </footer>
 
 <script src="js/storage.js"></script>
+<script src="js/srs.js"></script>
 <script src="js/tts.js"></script>
 <script src="js/quiz.js"></script>
+<script src="js/flashcard.js"></script>
 <script src="js/data/gojuon-data.js"></script>
-<script src="js/gojuon.js"></script>
+<script src="js/data/katakana-data.js"></script>
+<script src="js/katakana.js"></script>
 </body>
 </html>
