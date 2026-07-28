@@ -59,12 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="flashcard-inner">
           <div class="flashcard-face front">
             <span class="badge">${word.pos}</span>
-            <div class="kanji-word jp">${word.kanji}</div>
-            <div class="kana-word jp">${word.kana}</div>
+            <div class="kanji-word jp"><ruby>${word.kanji}<rt>${word.kana}</rt></ruby></div>
             <button type="button" class="speak-btn" data-speak="${word.kanji}" title="播放發音">🔊</button>
             <div class="sentence-note">點卡片看意思</div>
           </div>
           <div class="flashcard-face back">
+            <span class="sfx-corner">ドンッ!!</span>
             <div class="meaning">${word.meaning}</div>
             <div class="example jp">${word.example.jp}</div>
             <div class="example">${word.example.zh}</div>

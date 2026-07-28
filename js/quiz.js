@@ -46,6 +46,9 @@ function runQuiz({ container, questions, storageKey }) {
     });
   }
 
+  const CORRECT_SFX = ['ズバッ!!', 'キラーン✨', 'ドンッ!!', 'ビシッ!!'];
+  const WRONG_SFX = ['ガーン…', 'ズコー…', 'グワッ…'];
+
   function selectAnswer(i, btn) {
     const q = questions[idx];
     const allBtns = optionsEl.querySelectorAll('.quiz-option');
@@ -53,12 +56,14 @@ function runQuiz({ container, questions, storageKey }) {
     if (i === q.answer) {
       btn.classList.add('correct');
       score += 1;
-      feedbackEl.textContent = '✔ 正解！' + (q.explanation ? '　' + q.explanation : '');
+      const sfx = CORRECT_SFX[Math.floor(Math.random() * CORRECT_SFX.length)];
+      feedbackEl.innerHTML = `✔ 正解！<span class="sfx-inline">${sfx}</span>` + (q.explanation ? '<br>' + q.explanation : '');
       feedbackEl.classList.add('correct');
     } else {
       btn.classList.add('incorrect');
       allBtns[q.answer].classList.add('correct');
-      feedbackEl.textContent = '✘ 再確認一下！' + (q.explanation ? '　' + q.explanation : '');
+      const sfx = WRONG_SFX[Math.floor(Math.random() * WRONG_SFX.length)];
+      feedbackEl.innerHTML = `✘ 再確認一下！<span class="sfx-inline">${sfx}</span>` + (q.explanation ? '<br>' + q.explanation : '');
       feedbackEl.classList.add('incorrect');
     }
     nextBtn.style.display = 'inline-flex';

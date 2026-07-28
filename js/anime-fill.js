@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     speakBtn.addEventListener('click', () => {
       const chosenIdx = select.value !== '-1' ? Number(select.value) : item.answer;
-      TTS.speak(item.before + item.options[chosenIdx] + item.after);
+      const fullSentence = item.before + item.options[chosenIdx] + item.after;
+      TTS.speak(stripFurigana(fullSentence));
     });
 
     select.addEventListener('change', () => {
@@ -55,11 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
         correctCount += 1;
         card.style.boxShadow = '6px 6px 0 var(--teal)';
         feedback.style.color = '#157a45';
-        feedback.textContent = '✔ 正解！';
+        feedback.innerHTML = '✔ 正解！<span class="sfx-inline">ズバッ!!</span>';
       } else {
         card.style.boxShadow = '6px 6px 0 var(--danger)';
         feedback.style.color = '#b0202f';
-        feedback.textContent = `✘ 正確答案是「${item.options[item.answer]}」`;
+        feedback.innerHTML = `✘ 正確答案是「${item.options[item.answer]}」<span class="sfx-inline">ガーン…</span>`;
       }
       const note = document.createElement('div');
       note.innerHTML = `

@@ -29,9 +29,15 @@ const TTS = {
 };
 TTS.init();
 
+/* 把句子裡的 <ruby>漢字<rt>読み</rt></ruby> 注音標記去掉，只留下原本的日文文字，
+   避免語音合成把 HTML 標籤內容也念出來 */
+function stripFurigana(html) {
+  return html.replace(/<rt>.*?<\/rt>/g, '').replace(/<\/?ruby>/g, '');
+}
+
 /* 讓帶有 data-speak="text" 的按鈕都能自動綁定朗讀功能 */
 document.addEventListener('click', (e) => {
   const btn = e.target.closest('[data-speak]');
   if (!btn) return;
-  TTS.speak(btn.getAttribute('data-speak'));
+  TTS.speak(stripFurigana(btn.getAttribute('data-speak')));
 });

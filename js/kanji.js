@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   KANJI_DATA.forEach((k) => {
     const tile = document.createElement('div');
     tile.className = 'kanji-tile';
+    const examplesHtml = k.examples
+      .map((ex) => `<div class="jp"><ruby>${ex.word}<rt>${ex.reading}</rt></ruby>　${ex.meaning}</div>`)
+      .join('');
     tile.innerHTML = `
+      <span class="sfx-corner">パキッ</span>
       <div class="char jp">${k.char}</div>
       <div class="hint">點一下查看讀音</div>
       <div class="detail">
@@ -17,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="readings"><b>訓讀</b> ${k.kunyomi.join('、')}</div>
         <div>部首：${k.radical}｜筆畫：${k.strokes}</div>
         <div>意思：${k.meaning}</div>
+        <div class="kanji-examples">${examplesHtml}</div>
       </div>
     `;
     tile.addEventListener('click', () => tile.classList.toggle('revealed'));
