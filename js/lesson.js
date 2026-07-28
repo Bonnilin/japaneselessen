@@ -1,17 +1,41 @@
-/* 文法課程頁面共用邏輯：渲染規則／例句 + 掛上測驗 */
-function renderLesson({ lesson, quiz, storageKey, rulesElId, usagesElId, quizContainerId }) {
-  const rulesEl = document.getElementById(rulesElId);
-  rulesEl.innerHTML = lesson.rules
-    .map(
-      (r) => `
-      <div class="note-box">
-        <strong>${r.group}</strong>
-        <div class="jp" style="margin-top:0.3rem;">${r.examples.join('　｜　')}</div>
-      </div>`
-    )
-    .join('');
+/* 文法課程頁面邏輯（grammar.html 共用樣板）：
+   從網址 ?slug= 找出對應課程，渲染規則／例句，並掛上測驗 */
+document.addEventListener('DOMContentLoaded', () => {
+  const slug = new URLSearchParams(location.search).get('slug');
+  const lesson = GRAMMAR_LESSONS.find((l) => l.slug === slug);
 
-  const usagesEl = document.getElementById(usagesElId);
+  const notFoundEl = document.getElementById('lesson-not-found');
+  const contentSection = document.getElementById('lesson-content');
+
+  if (!lesson) {
+    notFoundEl.style.display = 'block';
+    contentSection.style.display = 'none';
+    return;
+  }
+
+  document.title = `${lesson.title}｜ニホンゴ・クエスト`;
+  document.getElementById('lesson-level-badge').textContent = lesson.level;
+  document.getElementById('lesson-title').textContent = lesson.title;
+  document.getElementById('lesson-intro').textContent = lesson.intro;
+
+  const rulesSection = document.getElementById('rules-section');
+  const rulesEl = document.getElementById('rules-list');
+  if (lesson.rules && lesson.rules.length) {
+    rulesSection.style.display = '';
+    rulesEl.innerHTML = lesson.rules
+      .map(
+        (r) => `
+        <div class="note-box">
+          <strong>${r.group}</strong>
+          <div class="jp" style="margin-top:0.3rem;">${r.examples.join('　｜　')}</div>
+        </div>`
+      )
+      .join('');
+  } else {
+    rulesSection.style.display = 'none';
+  }
+
+  const usagesEl = document.getElementById('usages-list');
   usagesEl.innerHTML = lesson.usages
     .map(
       (u) => `
@@ -29,16 +53,15 @@ function renderLesson({ lesson, quiz, storageKey, rulesElId, usagesElId, quizCon
 
   const quizBtn = document.getElementById('lesson-quiz-btn');
   const backBtn = document.getElementById('lesson-back-btn');
-  const contentSection = document.getElementById('lesson-content');
   const quizSection = document.getElementById('lesson-quiz-section');
 
   quizBtn.addEventListener('click', () => {
     contentSection.style.display = 'none';
     quizSection.style.display = 'block';
     runQuiz({
-      container: document.getElementById(quizContainerId),
-      questions: quiz,
-      storageKey
+      container: document.getElementById('lesson-quiz-container'),
+      questions: lesson.quiz,
+      storageKey: `grammar_${lesson.slug}`
     });
   });
 
@@ -46,4 +69,4 @@ function renderLesson({ lesson, quiz, storageKey, rulesElId, usagesElId, quizCon
     quizSection.style.display = 'none';
     contentSection.style.display = 'block';
   });
-}
+});

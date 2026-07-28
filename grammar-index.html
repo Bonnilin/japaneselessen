@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>動畫句子填空｜ニホンゴ・クエスト</title>
+<title>文法課程列表｜ニホンゴ・クエスト</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
@@ -19,28 +19,32 @@
       <a href="index.html">首頁</a>
       <a href="gojuon.html">五十音</a>
       <a href="katakana.html">片假名練習</a>
-      <a href="grammar-index.html">文法課程</a>
+      <a href="grammar-index.html" aria-current="page">文法課程</a>
       <a href="vocab-index.html">單字閃卡</a>
       <a href="kanji-index.html">漢字特訓</a>
-      <a href="anime-fill.html" aria-current="page">句子填空</a>
+      <a href="anime-fill.html">句子填空</a>
     </nav>
   </div>
 </header>
 
 <main>
   <div class="section-title">
-    <span class="bolt">💥</span>
-    <h2>動畫風格句子填空</h2>
+    <span class="bolt">📚</span>
+    <h2>文法課程列表</h2>
   </div>
 
   <div class="panel accent-gold">
-    <span class="sfx">ゴゴゴ…</span>
-    <span class="sfx-flourish" style="float:right;">ズドンッ!!</span>
-    <p>用剛學過的「て形」跟「受身形」，挑戰這些原創熱血風格例句！每句都是模仿熱門少年動畫常見的台詞語感所寫的原創句子，不引用任何特定作品的版權台詞。選出正確的動詞變化，感受一下用日文講出中二台詞的快感吧。</p>
-    <p id="anime-fill-summary" style="font-weight:800; margin-bottom:0;">讀取中…</p>
+    <span class="sfx-flourish">ズドドド…</span>
+    <p id="grammar-summary">讀取中…</p>
   </div>
 
-  <div id="anime-fill-list"></div>
+  <div class="section-title"><span class="bolt">🔰</span><h2>N5 文法</h2></div>
+  <div class="card-grid" id="n5-lesson-list"></div>
+
+  <div class="stripe-divider"></div>
+
+  <div class="section-title"><span class="bolt">🔥</span><h2>N4 文法</h2></div>
+  <div class="card-grid" id="n4-lesson-list"></div>
 </main>
 
 <footer class="site-footer">
@@ -48,8 +52,7 @@
 </footer>
 
 <script src="js/storage.js"></script>
-<script src="js/tts.js"></script>
 <script src="js/data/sentences-data.js"></script>
-<script src="js/anime-fill.js"></script>
+<script src="js/grammar-index.js"></script>
 </body>
 </html>

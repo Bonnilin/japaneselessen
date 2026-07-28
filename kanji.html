@@ -19,10 +19,9 @@
       <a href="index.html">首頁</a>
       <a href="gojuon.html">五十音</a>
       <a href="katakana.html">片假名練習</a>
-      <a href="lesson-te-form.html">文法：て形</a>
-      <a href="lesson-passive.html">文法：受身形</a>
-      <a href="vocab.html">單字閃卡</a>
-      <a href="kanji.html" aria-current="page">漢字特訓</a>
+      <a href="grammar-index.html">文法課程</a>
+      <a href="vocab-index.html">單字閃卡</a>
+      <a href="kanji-index.html" aria-current="page">漢字特訓</a>
       <a href="anime-fill.html">句子填空</a>
     </nav>
   </div>
@@ -30,27 +29,37 @@
 
 <main>
   <div class="section-title">
-    <span class="bolt">🀄</span>
-    <h2>漢字特訓</h2>
+    <span class="bolt" id="batch-level-badge">…</span>
+    <h2 id="batch-title">載入中…</h2>
   </div>
 
-  <div class="panel accent-teal">
-    <span class="sfx-flourish">ドンッ!!</span>
-    <p>點擊漢字卡片查看音讀、訓讀、部首與例詞，熟悉之後再挑戰讀音小測驗！</p>
+  <div id="batch-not-found" class="panel accent-pink" style="display:none;">
+    <h2>😵 找不到這批漢字</h2>
+    <p>連結可能有誤，或這批漢字還在製作中。</p>
+    <a class="btn" href="kanji-index.html">← 回到漢字批次列表</a>
   </div>
 
-  <section id="kanji-grid-section">
-    <div class="kanji-grid" id="kanji-grid"></div>
-    <div class="btn-row">
-      <button class="btn pink" id="kanji-quiz-btn">📝 開始漢字讀音小測驗（8題）</button>
+  <section id="batch-content">
+    <div class="panel accent-teal">
+      <span class="sfx-flourish">ドンッ!!</span>
+      <p id="batch-desc"></p>
+      <p>點擊漢字卡片查看音讀、訓讀、部首與例詞，熟悉之後再挑戰讀音小測驗！</p>
     </div>
-  </section>
 
-  <section id="kanji-quiz" style="display:none;">
-    <div class="panel accent-pink" id="kanji-quiz-container"></div>
-    <div class="btn-row">
-      <button class="btn secondary" id="kanji-back-btn">← 回到漢字卡片</button>
-    </div>
+    <section id="kanji-grid-section">
+      <div class="kanji-grid" id="kanji-grid"></div>
+      <div class="btn-row">
+        <button class="btn pink" id="kanji-quiz-btn">📝 開始漢字讀音小測驗</button>
+        <a class="btn ghost" href="kanji-index.html">← 回到漢字批次列表</a>
+      </div>
+    </section>
+
+    <section id="kanji-quiz" style="display:none;">
+      <div class="panel accent-pink" id="kanji-quiz-container"></div>
+      <div class="btn-row">
+        <button class="btn secondary" id="kanji-back-btn">← 回到漢字卡片</button>
+      </div>
+    </section>
   </section>
 </main>
 

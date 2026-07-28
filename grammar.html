@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>文法：受身形｜ニホンゴ・クエスト</title>
+<title>文法課程｜ニホンゴ・クエスト</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
@@ -19,10 +19,9 @@
       <a href="index.html">首頁</a>
       <a href="gojuon.html">五十音</a>
       <a href="katakana.html">片假名練習</a>
-      <a href="lesson-te-form.html">文法：て形</a>
-      <a href="lesson-passive.html" aria-current="page">文法：受身形</a>
-      <a href="vocab.html">單字閃卡</a>
-      <a href="kanji.html">漢字特訓</a>
+      <a href="grammar-index.html" aria-current="page">文法課程</a>
+      <a href="vocab-index.html">單字閃卡</a>
+      <a href="kanji-index.html">漢字特訓</a>
       <a href="anime-fill.html">句子填空</a>
     </nav>
   </div>
@@ -30,25 +29,32 @@
 
 <main>
   <div class="section-title">
-    <span class="bolt">🔥</span>
-    <h2>文法課：受身形</h2>
+    <span class="bolt" id="lesson-level-badge">…</span>
+    <h2 id="lesson-title">載入中…</h2>
+  </div>
+
+  <div id="lesson-not-found" class="panel accent-pink" style="display:none;">
+    <h2>😵 找不到這堂課</h2>
+    <p>連結可能有誤，或這堂課還在製作中。</p>
+    <a class="btn" href="grammar-index.html">← 回到文法課程列表</a>
   </div>
 
   <section id="lesson-content">
-    <div class="panel accent-pink">
-      <span class="sfx-flourish">ズドドドッ!!</span>
-      <h2><span class="tag">N4</span> 當你被命運選中的那一刻</h2>
-      <p>受身形（被動式）是 N4 的重要文法之一，能表達「被…做了…」。它不只用在客觀事實，也常用來表達「遭受」某件不愉快的事（迷惑の受身），這在故事、對話中非常常見。</p>
+    <div class="panel accent-gold">
+      <p id="lesson-intro"></p>
     </div>
 
-    <div class="section-title"><span class="bolt">📐</span><h2>變化規則</h2></div>
-    <div id="rules-list"></div>
+    <div id="rules-section">
+      <div class="section-title"><span class="bolt">📐</span><h2>變化規則</h2></div>
+      <div id="rules-list"></div>
+    </div>
 
     <div class="section-title"><span class="bolt">💬</span><h2>常用句型</h2></div>
     <div id="usages-list"></div>
 
     <div class="btn-row">
-      <button class="btn pink" id="lesson-quiz-btn">📝 開始文法小測驗（6題）</button>
+      <button class="btn pink" id="lesson-quiz-btn">📝 開始文法小測驗</button>
+      <a class="btn secondary" href="grammar-index.html">← 回到文法課程列表</a>
     </div>
   </section>
 
@@ -69,17 +75,5 @@
 <script src="js/quiz.js"></script>
 <script src="js/lesson.js"></script>
 <script src="js/data/sentences-data.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    renderLesson({
-      lesson: PASSIVE_LESSON,
-      quiz: PASSIVE_QUIZ,
-      storageKey: 'passive_quiz',
-      rulesElId: 'rules-list',
-      usagesElId: 'usages-list',
-      quizContainerId: 'lesson-quiz-container'
-    });
-  });
-</script>
 </body>
 </html>

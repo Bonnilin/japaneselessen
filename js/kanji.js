@@ -1,12 +1,30 @@
-/* 漢字特訓頁面邏輯：翻卡看讀音／部首／例詞 + 讀音小測驗 */
+/* 漢字特訓頁面邏輯（kanji.html 共用樣板）：
+   從網址 ?batch= 找出對應漢字批次，翻卡看讀音／部首／例詞 + 讀音小測驗 */
 document.addEventListener('DOMContentLoaded', () => {
+  const slug = new URLSearchParams(location.search).get('batch');
+  const set = KANJI_SETS.find((s) => s.slug === slug);
+
+  const notFoundEl = document.getElementById('batch-not-found');
+  const contentEl = document.getElementById('batch-content');
+
+  if (!set) {
+    notFoundEl.style.display = 'block';
+    contentEl.style.display = 'none';
+    return;
+  }
+
+  document.title = `${set.title}｜ニホンゴ・クエスト`;
+  document.getElementById('batch-level-badge').textContent = set.level;
+  document.getElementById('batch-title').textContent = set.title;
+  document.getElementById('batch-desc').textContent = set.desc;
+
   const gridEl = document.getElementById('kanji-grid');
   const quizBtn = document.getElementById('kanji-quiz-btn');
   const quizSection = document.getElementById('kanji-quiz');
   const gridSection = document.getElementById('kanji-grid-section');
   const backBtn = document.getElementById('kanji-back-btn');
 
-  KANJI_DATA.forEach((k) => {
+  set.kanji.forEach((k) => {
     const tile = document.createElement('div');
     tile.className = 'kanji-tile';
     const examplesHtml = k.examples
@@ -30,10 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function buildKanjiQuiz() {
     const allExamples = [];
-    KANJI_DATA.forEach((k) => {
+    set.kanji.forEach((k) => {
       k.examples.forEach((ex) => allExamples.push(ex));
     });
-    const picked = shuffle(allExamples).slice(0, 8);
+    const picked = shuffle(allExamples).slice(0, Math.min(8, allExamples.length));
     return picked.map((item) => {
       const distractors = shuffle(allExamples.filter((x) => x.reading !== item.reading))
         .slice(0, 3)
@@ -54,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     runQuiz({
       container: document.getElementById('kanji-quiz-container'),
       questions: buildKanjiQuiz(),
-      storageKey: 'kanji_quiz'
+      storageKey: `kanji_${set.slug}`
     });
   });
 
