@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>平假名書寫練習｜ニホンゴ・クエスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="title">ニホンゴ・クエスト</span>
+      <span class="subtitle">NIHONGO QUEST — 五十音 → N4</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="gojuon.html">五十音</a>
+      <a href="hiragana-practice.html" aria-current="page">假名書寫</a>
+      <a href="lesson-te-form.html">文法：て形</a>
+      <a href="lesson-passive.html">文法：受身形</a>
+      <a href="vocab.html">單字閃卡</a>
+      <a href="kanji.html">漢字特訓</a>
+      <a href="anime-fill.html">句子填空</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">
+    <span class="bolt">✍️</span>
+    <h2>平假名書寫練習</h2>
+  </div>
+
+  <div class="panel accent-purple">
+    <span class="sfx-flourish">シュッ!!</span>
+    <p>在畫布上照著淡淡的參考字描寫，感受一下平假名的筆畫走向。畫錯了按「重寫」隨時清空，練熟了就按「下一個」挑戰下一個假名！</p>
+  </div>
+
+  <div class="stroke-practice-layout">
+    <div class="stroke-nav-row">
+      <button class="btn secondary" id="stroke-prev-btn">← 上一個</button>
+      <span class="current-char jp" id="current-char">あ</span>
+      <button class="btn secondary" id="stroke-next-btn">下一個 →</button>
+    </div>
+
+    <div class="stroke-canvas-wrap">
+      <canvas id="stroke-canvas"></canvas>
+    </div>
+
+    <div class="stroke-meta">
+      <span>羅馬拼音：<span id="current-romaji">a</span></span>
+      <span id="stroke-count">參考筆畫數：3 畫</span>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn pink" id="stroke-clear-btn">🔄 重寫</button>
+      <button class="btn teal" id="stroke-speak-btn">🔊 發音</button>
+    </div>
+
+    <div class="panel" style="width:100%;">
+      <p style="margin-top:0;">快速選字：</p>
+      <div class="hiragana-picker-grid" id="hiragana-picker-grid"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  ニホンゴ・クエスト — 個人日文學習練習網站 Demo
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/data/gojuon-data.js"></script>
+<script src="js/data/hiragana-stroke-data.js"></script>
+<script src="js/hiragana-practice.js"></script>
+</body>
+</html>
