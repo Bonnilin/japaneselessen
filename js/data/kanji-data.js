@@ -785,4 +785,396 @@ const KANJI_SETS = [
       }
     ]
   },
+  {
+    slug: 'n4-batch5',
+    level: 'N4',
+    title: 'N4 漢字第 5 批',
+    desc: '有、無、多、少、高、低、長、短、強、弱 — 10 個程度與比較 N4 漢字',
+    kanji: [
+      {
+        id: 'v01', char: '有', meaning: '擁有、存在', radical: '月', strokes: 6,
+        onyomi: ['ユウ', 'ウ'], kunyomi: ['あ.る'],
+        examples: [
+          { word: '有名', reading: 'ゆうめい', meaning: '有名' },
+          { word: '有効', reading: 'ゆうこう', meaning: '有效' },
+          { word: '所有', reading: 'しょゆう', meaning: '擁有' }
+        ]
+      },
+      {
+        id: 'v02', char: '無', meaning: '沒有', radical: '灬', strokes: 12,
+        onyomi: ['ム', 'ブ'], kunyomi: ['な.い'],
+        examples: [
+          { word: '無料', reading: 'むりょう', meaning: '免費' },
+          { word: '無理', reading: 'むり', meaning: '不可能、勉強' },
+          { word: '無事', reading: 'ぶじ', meaning: '平安無事' }
+        ]
+      },
+      {
+        id: 'v03', char: '多', meaning: '多', radical: '夕', strokes: 6,
+        onyomi: ['タ'], kunyomi: ['おお.い'],
+        examples: [
+          { word: '多い', reading: 'おおい', meaning: '多的' },
+          { word: '多分', reading: 'たぶん', meaning: '大概' },
+          { word: '多数', reading: 'たすう', meaning: '多數' }
+        ]
+      },
+      {
+        id: 'v04', char: '少', meaning: '少', radical: '小', strokes: 4,
+        onyomi: ['ショウ'], kunyomi: ['すく.ない', 'すこ.し'],
+        examples: [
+          { word: '少ない', reading: 'すくない', meaning: '少的' },
+          { word: '少し', reading: 'すこし', meaning: '一點點' },
+          { word: '少年', reading: 'しょうねん', meaning: '少年' }
+        ]
+      },
+      {
+        id: 'v05', char: '高', meaning: '高、貴', radical: '高', strokes: 10,
+        onyomi: ['コウ'], kunyomi: ['たか.い'],
+        examples: [
+          { word: '高い', reading: 'たかい', meaning: '高的、貴的' },
+          { word: '高校', reading: 'こうこう', meaning: '高中' },
+          { word: '最高', reading: 'さいこう', meaning: '最好、最高' }
+        ]
+      },
+      {
+        id: 'v06', char: '低', meaning: '低', radical: '亻', strokes: 7,
+        onyomi: ['テイ'], kunyomi: ['ひく.い'],
+        examples: [
+          { word: '低い', reading: 'ひくい', meaning: '低的' },
+          { word: '最低', reading: 'さいてい', meaning: '最低、最差' },
+          { word: '低下', reading: 'ていか', meaning: '下降' }
+        ]
+      },
+      {
+        id: 'v07', char: '長', meaning: '長、首長', radical: '長', strokes: 8,
+        onyomi: ['チョウ'], kunyomi: ['なが.い'],
+        examples: [
+          { word: '長い', reading: 'ながい', meaning: '長的' },
+          { word: '社長', reading: 'しゃちょう', meaning: '社長' },
+          { word: '校長', reading: 'こうちょう', meaning: '校長' }
+        ]
+      },
+      {
+        id: 'v08', char: '短', meaning: '短', radical: '矢', strokes: 12,
+        onyomi: ['タン'], kunyomi: ['みじか.い'],
+        examples: [
+          { word: '短い', reading: 'みじかい', meaning: '短的' },
+          { word: '短期', reading: 'たんき', meaning: '短期' },
+          { word: '短所', reading: 'たんしょ', meaning: '缺點' }
+        ]
+      },
+      {
+        id: 'v09', char: '強', meaning: '強', radical: '弓', strokes: 11,
+        onyomi: ['キョウ', 'ゴウ'], kunyomi: ['つよ.い', 'し.いる'],
+        examples: [
+          { word: '強い', reading: 'つよい', meaning: '強壯的' },
+          { word: '勉強', reading: 'べんきょう', meaning: '學習' },
+          { word: '強調', reading: 'きょうちょう', meaning: '強調' }
+        ]
+      },
+      {
+        id: 'v10', char: '弱', meaning: '弱', radical: '弓', strokes: 10,
+        onyomi: ['ジャク'], kunyomi: ['よわ.い'],
+        examples: [
+          { word: '弱い', reading: 'よわい', meaning: '虛弱的' },
+          { word: '弱点', reading: 'じゃくてん', meaning: '弱點' },
+          { word: '弱者', reading: 'じゃくしゃ', meaning: '弱者' }
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'n5-batch5',
+    level: 'N5',
+    title: 'N5 漢字第 5 批',
+    desc: '白、黒、赤、青、色、音、楽、絵、歌、声 — 10 個顏色與藝術相關 N5 漢字',
+    kanji: [
+      {
+        id: 'w01', char: '白', meaning: '白色', radical: '白', strokes: 5,
+        onyomi: ['ハク', 'ビャク'], kunyomi: ['しろ', 'しろ.い'],
+        examples: [
+          { word: '白い', reading: 'しろい', meaning: '白的' },
+          { word: '白色', reading: 'はくしょく', meaning: '白色' },
+          { word: '空白', reading: 'くうはく', meaning: '空白' }
+        ]
+      },
+      {
+        id: 'w02', char: '黒', meaning: '黑色', radical: '黒', strokes: 11,
+        onyomi: ['コク'], kunyomi: ['くろ', 'くろ.い'],
+        examples: [
+          { word: '黒い', reading: 'くろい', meaning: '黑的' },
+          { word: '黒板', reading: 'こくばん', meaning: '黑板' },
+          { word: '暗黒', reading: 'あんこく', meaning: '黑暗' }
+        ]
+      },
+      {
+        id: 'w03', char: '赤', meaning: '紅色', radical: '赤', strokes: 7,
+        onyomi: ['セキ'], kunyomi: ['あか', 'あか.い'],
+        examples: [
+          { word: '赤い', reading: 'あかい', meaning: '紅的' },
+          { word: '赤字', reading: 'あかじ', meaning: '赤字、虧損' },
+          { word: '赤ちゃん', reading: 'あかちゃん', meaning: '嬰兒' }
+        ]
+      },
+      {
+        id: 'w04', char: '青', meaning: '藍色', radical: '青', strokes: 8,
+        onyomi: ['セイ'], kunyomi: ['あお', 'あお.い'],
+        examples: [
+          { word: '青い', reading: 'あおい', meaning: '藍的' },
+          { word: '青年', reading: 'せいねん', meaning: '青年' },
+          { word: '青空', reading: 'あおぞら', meaning: '藍天' }
+        ]
+      },
+      {
+        id: 'w05', char: '色', meaning: '顏色', radical: '色', strokes: 6,
+        onyomi: ['ショク', 'シキ'], kunyomi: ['いろ'],
+        examples: [
+          { word: '色', reading: 'いろ', meaning: '顏色' },
+          { word: '景色', reading: 'けしき', meaning: '風景' },
+          { word: '特色', reading: 'とくしょく', meaning: '特色' }
+        ]
+      },
+      {
+        id: 'w06', char: '音', meaning: '聲音', radical: '音', strokes: 9,
+        onyomi: ['オン', 'イン'], kunyomi: ['おと'],
+        examples: [
+          { word: '音', reading: 'おと', meaning: '聲音' },
+          { word: '音楽', reading: 'おんがく', meaning: '音樂' },
+          { word: '発音', reading: 'はつおん', meaning: '發音' }
+        ]
+      },
+      {
+        id: 'w07', char: '楽', meaning: '快樂、音樂', radical: '木', strokes: 13,
+        onyomi: ['ガク', 'ラク'], kunyomi: ['たの.しい'],
+        examples: [
+          { word: '楽しい', reading: 'たのしい', meaning: '快樂的' },
+          { word: '音楽', reading: 'おんがく', meaning: '音樂' },
+          { word: '楽', reading: 'らく', meaning: '輕鬆' }
+        ]
+      },
+      {
+        id: 'w08', char: '絵', meaning: '畫', radical: '糸', strokes: 12,
+        onyomi: ['カイ', 'エ'], kunyomi: [],
+        examples: [
+          { word: '絵', reading: 'え', meaning: '畫' },
+          { word: '絵本', reading: 'えほん', meaning: '繪本' },
+          { word: '絵画', reading: 'かいが', meaning: '繪畫' }
+        ]
+      },
+      {
+        id: 'w09', char: '歌', meaning: '歌', radical: '欠', strokes: 14,
+        onyomi: ['カ'], kunyomi: ['うた', 'うた.う'],
+        examples: [
+          { word: '歌う', reading: 'うたう', meaning: '唱歌' },
+          { word: '歌', reading: 'うた', meaning: '歌' },
+          { word: '歌手', reading: 'かしゅ', meaning: '歌手' }
+        ]
+      },
+      {
+        id: 'w10', char: '声', meaning: '聲音', radical: '士', strokes: 7,
+        onyomi: ['セイ'], kunyomi: ['こえ'],
+        examples: [
+          { word: '声', reading: 'こえ', meaning: '聲音' },
+          { word: '音声', reading: 'おんせい', meaning: '聲音、語音' },
+          { word: '大声', reading: 'おおごえ', meaning: '大聲' }
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'n4-batch6',
+    level: 'N4',
+    title: 'N4 漢字第 6 批',
+    desc: '政、治、経、済、会、議、率、状、況、態 — 10 個社會與商業相關 N4 漢字',
+    kanji: [
+      {
+        id: 'x01', char: '政', meaning: '政治', radical: '攵', strokes: 9,
+        onyomi: ['セイ', 'ショウ'], kunyomi: [],
+        examples: [
+          { word: '政治', reading: 'せいじ', meaning: '政治' },
+          { word: '政府', reading: 'せいふ', meaning: '政府' },
+          { word: '行政', reading: 'ぎょうせい', meaning: '行政' }
+        ]
+      },
+      {
+        id: 'x02', char: '治', meaning: '治理、治療', radical: '氵', strokes: 8,
+        onyomi: ['ジ', 'チ'], kunyomi: ['おさ.める', 'なお.る'],
+        examples: [
+          { word: '政治', reading: 'せいじ', meaning: '政治' },
+          { word: '治る', reading: 'なおる', meaning: '痊癒' },
+          { word: '治療', reading: 'ちりょう', meaning: '治療' }
+        ]
+      },
+      {
+        id: 'x03', char: '経', meaning: '經過、經營', radical: '糸', strokes: 11,
+        onyomi: ['ケイ', 'キョウ'], kunyomi: [],
+        examples: [
+          { word: '経済', reading: 'けいざい', meaning: '經濟' },
+          { word: '経験', reading: 'けいけん', meaning: '經驗' },
+          { word: '経営', reading: 'けいえい', meaning: '經營' }
+        ]
+      },
+      {
+        id: 'x04', char: '済', meaning: '完成、救助', radical: '氵', strokes: 11,
+        onyomi: ['サイ'], kunyomi: ['す.む'],
+        examples: [
+          { word: '経済', reading: 'けいざい', meaning: '經濟' },
+          { word: '済む', reading: 'すむ', meaning: '結束、完成' },
+          { word: '返済', reading: 'へんさい', meaning: '還款' }
+        ]
+      },
+      {
+        id: 'x05', char: '会', meaning: '見面、聚會', radical: '人', strokes: 6,
+        onyomi: ['カイ', 'エ'], kunyomi: ['あ.う'],
+        examples: [
+          { word: '会う', reading: 'あう', meaning: '見面' },
+          { word: '会社', reading: 'かいしゃ', meaning: '公司' },
+          { word: '会議', reading: 'かいぎ', meaning: '會議' }
+        ]
+      },
+      {
+        id: 'x06', char: '議', meaning: '討論、議論', radical: '言', strokes: 20,
+        onyomi: ['ギ'], kunyomi: [],
+        examples: [
+          { word: '会議', reading: 'かいぎ', meaning: '會議' },
+          { word: '議論', reading: 'ぎろん', meaning: '議論、討論' },
+          { word: '議員', reading: 'ぎいん', meaning: '議員' }
+        ]
+      },
+      {
+        id: 'x07', char: '率', meaning: '比率、帶領', radical: '玄', strokes: 11,
+        onyomi: ['リツ', 'ソツ'], kunyomi: [],
+        examples: [
+          { word: '効率', reading: 'こうりつ', meaning: '效率' },
+          { word: '確率', reading: 'かくりつ', meaning: '機率' },
+          { word: '比率', reading: 'ひりつ', meaning: '比率' }
+        ]
+      },
+      {
+        id: 'x08', char: '状', meaning: '狀態、情形', radical: '爿', strokes: 7,
+        onyomi: ['ジョウ'], kunyomi: [],
+        examples: [
+          { word: '状況', reading: 'じょうきょう', meaning: '狀況' },
+          { word: '状態', reading: 'じょうたい', meaning: '狀態' },
+          { word: '招待状', reading: 'しょうたいじょう', meaning: '邀請函' }
+        ]
+      },
+      {
+        id: 'x09', char: '況', meaning: '狀況', radical: '氵', strokes: 8,
+        onyomi: ['キョウ'], kunyomi: [],
+        examples: [
+          { word: '状況', reading: 'じょうきょう', meaning: '狀況' },
+          { word: '近況', reading: 'きんきょう', meaning: '近況' },
+          { word: '不況', reading: 'ふきょう', meaning: '不景氣' }
+        ]
+      },
+      {
+        id: 'x10', char: '態', meaning: '樣態、狀態', radical: '心', strokes: 14,
+        onyomi: ['タイ'], kunyomi: [],
+        examples: [
+          { word: '状態', reading: 'じょうたい', meaning: '狀態' },
+          { word: '態度', reading: 'たいど', meaning: '態度' },
+          { word: '事態', reading: 'じたい', meaning: '事態' }
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'n5-batch6',
+    level: 'N5',
+    title: 'N5 漢字第 6 批',
+    desc: '東、西、南、北、右、左、前、後、内、外 — 10 個方位 N5 漢字',
+    kanji: [
+      {
+        id: 'y01', char: '東', meaning: '東邊', radical: '木', strokes: 8,
+        onyomi: ['トウ'], kunyomi: ['ひがし'],
+        examples: [
+          { word: '東', reading: 'ひがし', meaning: '東邊' },
+          { word: '東京', reading: 'とうきょう', meaning: '東京' },
+          { word: '東洋', reading: 'とうよう', meaning: '東洋' }
+        ]
+      },
+      {
+        id: 'y02', char: '西', meaning: '西邊', radical: '西', strokes: 6,
+        onyomi: ['セイ', 'サイ'], kunyomi: ['にし'],
+        examples: [
+          { word: '西', reading: 'にし', meaning: '西邊' },
+          { word: '西洋', reading: 'せいよう', meaning: '西洋' },
+          { word: '関西', reading: 'かんさい', meaning: '關西' }
+        ]
+      },
+      {
+        id: 'y03', char: '南', meaning: '南邊', radical: '十', strokes: 9,
+        onyomi: ['ナン'], kunyomi: ['みなみ'],
+        examples: [
+          { word: '南', reading: 'みなみ', meaning: '南邊' },
+          { word: '南極', reading: 'なんきょく', meaning: '南極' },
+          { word: '東南', reading: 'とうなん', meaning: '東南' }
+        ]
+      },
+      {
+        id: 'y04', char: '北', meaning: '北邊', radical: '匕', strokes: 5,
+        onyomi: ['ホク'], kunyomi: ['きた'],
+        examples: [
+          { word: '北', reading: 'きた', meaning: '北邊' },
+          { word: '北海道', reading: 'ほっかいどう', meaning: '北海道' },
+          { word: '北極', reading: 'ほっきょく', meaning: '北極' }
+        ]
+      },
+      {
+        id: 'y05', char: '右', meaning: '右邊', radical: '口', strokes: 5,
+        onyomi: ['ウ', 'ユウ'], kunyomi: ['みぎ'],
+        examples: [
+          { word: '右', reading: 'みぎ', meaning: '右邊' },
+          { word: '右手', reading: 'みぎて', meaning: '右手' },
+          { word: '左右', reading: 'さゆう', meaning: '左右' }
+        ]
+      },
+      {
+        id: 'y06', char: '左', meaning: '左邊', radical: '工', strokes: 5,
+        onyomi: ['サ'], kunyomi: ['ひだり'],
+        examples: [
+          { word: '左', reading: 'ひだり', meaning: '左邊' },
+          { word: '左手', reading: 'ひだりて', meaning: '左手' },
+          { word: '左折', reading: 'させつ', meaning: '左轉' }
+        ]
+      },
+      {
+        id: 'y07', char: '前', meaning: '前面、之前', radical: '刂', strokes: 9,
+        onyomi: ['ゼン'], kunyomi: ['まえ'],
+        examples: [
+          { word: '名前', reading: 'なまえ', meaning: '名字' },
+          { word: '午前', reading: 'ごぜん', meaning: '上午' },
+          { word: '前', reading: 'まえ', meaning: '前面' }
+        ]
+      },
+      {
+        id: 'y08', char: '後', meaning: '後面、之後', radical: '彳', strokes: 9,
+        onyomi: ['ゴ', 'コウ'], kunyomi: ['あと', 'うし.ろ'],
+        examples: [
+          { word: '後', reading: 'あと', meaning: '之後' },
+          { word: '後ろ', reading: 'うしろ', meaning: '後面' },
+          { word: '午後', reading: 'ごご', meaning: '下午' }
+        ]
+      },
+      {
+        id: 'y09', char: '内', meaning: '裡面', radical: '冂', strokes: 4,
+        onyomi: ['ナイ'], kunyomi: ['うち'],
+        examples: [
+          { word: '内', reading: 'うち', meaning: '裡面、家裡' },
+          { word: '案内', reading: 'あんない', meaning: '導覽' },
+          { word: '国内', reading: 'こくない', meaning: '國內' }
+        ]
+      },
+      {
+        id: 'y10', char: '外', meaning: '外面', radical: '夕', strokes: 5,
+        onyomi: ['ガイ', 'ゲ'], kunyomi: ['そと'],
+        examples: [
+          { word: '外', reading: 'そと', meaning: '外面' },
+          { word: '外国', reading: 'がいこく', meaning: '外國' },
+          { word: '外出', reading: 'がいしゅつ', meaning: '外出' }
+        ]
+      }
+    ]
+  },
 ];
