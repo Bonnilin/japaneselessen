@@ -904,6 +904,196 @@ const GRAMMAR_LESSONS = [
       { question: '<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>し___です。（剛開始學日文不久）', options: ['<ruby>始<rt>はじ</rt></ruby>めたばかり', '<ruby>始<rt>はじ</rt></ruby>めるばかり', '<ruby>始<rt>はじ</rt></ruby>めているばかり', '<ruby>始<rt>はじ</rt></ruby>めばかり'], answer: 0, explanation: '接続た形＋ばかり。' }
     ]
   },
+  {
+    slug: 'hoshii',
+    level: 'N5',
+    title: '〜がほしいです｜想要（東西）',
+    intro: '「ほしい」用來表達「想要某個東西」，前面接名詞用「が」，跟表達「想做某事」的「〜たい」不同，請小心分辨。',
+    rules: [],
+    usages: [
+      { pattern: '名詞 ＋ が ＋ ほしいです', meaning: '表示想要某個東西', example: { jp: '<ruby>新<rt>あたら</rt></ruby>しいパソコンがほしいです。', zh: '想要一台新電腦。' } },
+      { pattern: '名詞 ＋ が ＋ ほしくないです', meaning: '表示不想要某個東西', example: { jp: '<ruby>今<rt>いま</rt></ruby>は<ruby>何<rt>なに</rt></ruby>もほしくないです。', zh: '現在什麼都不想要。' } }
+    ],
+    quiz: [
+      { question: '「ほしい」跟「たい」的差別是？', options: ['都一樣', 'ほしい接名詞（想要東西）、たい接動詞（想做事）', 'ほしい是敬語', '沒有差別'], answer: 1, explanation: '「ほしい」用於想要「東西」，「たい」用於想「做某事」。' },
+      { question: '<ruby>新<rt>あたら</rt></ruby>しい<ruby>靴<rt>くつ</rt></ruby>___ほしいです。', options: ['を', 'が', 'に', 'で'], answer: 1, explanation: '「ほしい」前面的對象用「が」。' },
+      { question: '「ほしい」的否定形是？', options: ['ほしいじゃない', 'ほしくない', 'ほしいくない', 'ほしまない'], answer: 1, explanation: '「ほしい」是い形容詞變化：ほしい→ほしくない。' }
+    ]
+  },
+  {
+    slug: 'jidoushi-tadoushi',
+    level: 'N5',
+    title: '自動詞・他動詞｜門「開了」還是你「開了」門',
+    intro: '日文有很多動詞成對出現：自動詞（動作自然發生，不用受詞）跟他動詞（有人主動去做，需要受詞）。這一課學會怎麼分辨跟使用。',
+    rules: [
+      { group: '常見自他動詞對', examples: ['<ruby>開<rt>あ</rt></ruby>く（自）／<ruby>開<rt>あ</rt></ruby>ける（他）', '<ruby>閉<rt>し</rt></ruby>まる（自）／<ruby>閉<rt>し</rt></ruby>める（他）', '<ruby>始<rt>はじ</rt></ruby>まる（自）／<ruby>始<rt>はじ</rt></ruby>める（他）', '<ruby>止<rt>と</rt></ruby>まる（自）／<ruby>止<rt>と</rt></ruby>める（他）'] }
+    ],
+    usages: [
+      { pattern: '主語 ＋ が ＋ 自動詞', meaning: '描述事情自然發生，不強調是誰做的', example: { jp: 'ドアが<ruby>開<rt>あ</rt></ruby>きました。', zh: '門開了。' } },
+      { pattern: '主語 ＋ は ＋ 目的語 ＋ を ＋ 他動詞', meaning: '強調有人主動做了這個動作', example: { jp: '<ruby>私<rt>わたし</rt></ruby>はドアを<ruby>開<rt>あ</rt></ruby>けました。', zh: '我把門打開了。' } }
+    ],
+    quiz: [
+      { question: '「ドアが___。」（門自己開了，不強調是誰開的）', options: ['<ruby>開<rt>あ</rt></ruby>けました', '<ruby>開<rt>あ</rt></ruby>きました'], answer: 1, explanation: '不強調施動者，用自動詞「開く」。' },
+      { question: '「<ruby>私<rt>わたし</rt></ruby>は<ruby>窓<rt>まど</rt></ruby>を___。」（我把窗戶關上了）', options: ['<ruby>閉<rt>し</rt></ruby>まりました', '<ruby>閉<rt>し</rt></ruby>めました'], answer: 1, explanation: '強調「我」主動做的動作，用他動詞「閉める」，並搭配「を」。' },
+      { question: '自動詞的句型特徵是？', options: ['需要受詞「を」', '通常搭配「が」，不需要受詞', '一定是過去式', '一定是禮貌形'], answer: 1, explanation: '自動詞描述自然發生的狀態，主語用「が」，不需要受詞。' }
+    ]
+  },
+  {
+    slug: 'mae-ato',
+    level: 'N5',
+    title: '〜前に・〜後で｜之前、之後',
+    intro: '「前に」表示「在…之前」，「後で」表示「在…之後」，是描述動作先後順序常用的句型。',
+    rules: [],
+    usages: [
+      { pattern: '動詞辞書形 ＋ 前に', meaning: '表示「在…之前」，動作尚未發生', example: { jp: '<ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、<ruby>歯<rt>は</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>きます。', zh: '睡覺前刷牙。' } },
+      { pattern: '動詞た形 ＋ 後で', meaning: '表示「在…之後」，動作已經發生', example: { jp: 'ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べた<ruby>後<rt>あと</rt></ruby>で、<ruby>散歩<rt>さんぽ</rt></ruby>します。', zh: '吃完飯後去散步。' } }
+    ],
+    quiz: [
+      { question: '「前に」前面要接動詞的哪個形式？', options: ['辞書形', 'た形', 'て形', 'ます形'], answer: 0, explanation: '「前に」前面用辭書形，即使是過去的事情。' },
+      { question: '「後で」前面要接動詞的哪個形式？', options: ['辞書形', 'た形', 'て形', 'ない形'], answer: 1, explanation: '「後で」前面用た形，表示動作已完成。' },
+      { question: '<ruby>出<rt>で</rt></ruby>かける___、<ruby>鍵<rt>かぎ</rt></ruby>をかけます。（出門前鎖門）', options: ['前に', '後で'], answer: 0, explanation: '「出かける」是辭書形，動作尚未發生，用「前に」。' }
+    ]
+  },
+  {
+    slug: 'kata-method',
+    level: 'N5',
+    title: '〜方｜怎麼做…（方法）',
+    intro: '動詞ます形（去ます）加上「方」，可以變成「…的方法」，是詢問或說明做法時很實用的句型。',
+    rules: [
+      { group: '動詞ます形（去ます）＋方', examples: ['<ruby>作<rt>つく</rt></ruby>ります → <ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>', '<ruby>使<rt>つか</rt></ruby>います → <ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>', '<ruby>読<rt>よ</rt></ruby>みます → <ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>'] }
+    ],
+    usages: [
+      { pattern: '動詞ます形（去ます）＋方', meaning: '表示「…的方法」，把動作變成名詞', example: { jp: 'この<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。', zh: '請告訴我這個漢字的讀法。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>作<rt>つく</rt></ruby>ります」加上「方」是？', options: ['<ruby>作<rt>つく</rt></ruby>るかた', '<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>', '<ruby>作<rt>つく</rt></ruby>りますかた', '<ruby>作<rt>つく</rt></ruby>かた'], answer: 1, explanation: '去掉ます直接加「方」。' },
+      { question: '「<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>」是什麼意思？', options: ['使用者', '使用的方法', '使用期限', '使用地點'], answer: 1, explanation: '「〜方」表示做某動作的方法。' }
+    ]
+  },
+  {
+    slug: 'hodo-negative',
+    level: 'N5',
+    title: '〜ほど〜ない｜不如…那麼…',
+    intro: '「AはBほど〜ない」表示「A不像B那麼…」，是另一種常用的比較句型，語感上比「より」更委婉。',
+    rules: [],
+    usages: [
+      { pattern: 'A ＋ は ＋ B ＋ ほど ＋ 形容詞ない形', meaning: '表示A沒有B那麼…，B是程度較高的一方', example: { jp: '<ruby>今日<rt>きょう</rt></ruby>は<ruby>昨日<rt>きのう</rt></ruby>ほど<ruby>暑<rt>あつ</rt></ruby>くないです。', zh: '今天沒有昨天那麼熱。' } }
+    ],
+    quiz: [
+      { question: '「AはBほど〜ない」是什麼意思？', options: ['A比B更…', 'A沒有B那麼…', 'A跟B一樣', '都不是'], answer: 1, explanation: '這個句型表示A的程度不如B。' },
+      { question: '<ruby>弟<rt>おとうと</rt></ruby>は<ruby>兄<rt>あに</rt></ruby>___<ruby>背<rt>せ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>くないです。（弟弟沒有哥哥那麼高）', options: ['より', 'ほど', 'から', 'など'], answer: 1, explanation: '「ほど〜ない」表示比較的落差。' }
+    ]
+  },
+  {
+    slug: 'frequency-adverbs',
+    level: 'N5',
+    title: '頻度副詞｜總是、常常、有時候',
+    intro: '頻度副詞用來描述做某件事的頻率，這一課整理從「一定」到「完全不」的常用副詞順序。',
+    rules: [
+      { group: '頻度由高到低', examples: ['いつも（總是）', 'よく（常常）', 'ときどき（有時候）', 'あまり〜ない（不太…）', 'ぜんぜん〜ない（完全不…）'] }
+    ],
+    usages: [
+      { pattern: '頻度副詞 ＋ 動詞', meaning: '描述做某件事的頻率高低', example: { jp: '<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>はいつも<ruby>食<rt>た</rt></ruby>べます。', zh: '早餐總是會吃。' } },
+      { pattern: 'あまり／ぜんぜん ＋ 動詞否定形', meaning: '「あまり」跟「ぜんぜん」後面一定接否定形', example: { jp: 'お<ruby>酒<rt>さけ</rt></ruby>はあまり<ruby>飲<rt>の</rt></ruby>みません。', zh: '不太喝酒。' } }
+    ],
+    quiz: [
+      { question: '頻率最高的副詞是？', options: ['いつも', 'よく', 'ときどき', 'あまり'], answer: 0, explanation: '「いつも」表示「總是」，頻率最高。' },
+      { question: '「あまり」後面通常接什麼形式？', options: ['肯定形', '否定形', '命令形', '意向形'], answer: 1, explanation: '「あまり」固定搭配否定形，表示「不太…」。' },
+      { question: '<ruby>彼<rt>かれ</rt></ruby>は<ruby>納豆<rt>なっとう</rt></ruby>が___<ruby>食<rt>た</rt></ruby>べません。（他完全不吃納豆）', options: ['いつも', 'よく', 'ぜんぜん', 'ときどき'], answer: 2, explanation: '「ぜんぜん〜ない」表示「完全不…」。' }
+    ]
+  },
+  {
+    slug: 'toshite',
+    level: 'N4',
+    title: '〜として｜作為…、以…的身份',
+    intro: '「として」表示「作為…、以…的身份／立場」，常用在自我介紹職業身份，或描述某物的用途角色。',
+    rules: [],
+    usages: [
+      { pattern: '名詞 ＋ として', meaning: '表示身份、立場或用途', example: { jp: '<ruby>彼<rt>かれ</rt></ruby>は<ruby>先生<rt>せんせい</rt></ruby>として<ruby>働<rt>はたら</rt></ruby>いています。', zh: '他以老師的身份在工作。' } }
+    ],
+    quiz: [
+      { question: '「として」的意思最接近？', options: ['因為', '作為、以…的身份', '雖然', '如果'], answer: 1, explanation: '「として」表示身份或立場。' },
+      { question: '<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>___、この<ruby>問題<rt>もんだい</rt></ruby>に<ruby>興味<rt>きょうみ</rt></ruby>があります。（作為研究者，對這個問題有興趣）', options: ['として', 'にとって', 'について', 'による'], answer: 0, explanation: '表示身份立場用「として」。' }
+    ]
+  },
+  {
+    slug: 'tokoro',
+    level: 'N4',
+    title: '〜ところ｜正是…的時候',
+    intro: '「ところ」搭配動詞不同形式，可以精準表達「正要做」「正在做」「剛做完」三種時間點。',
+    rules: [
+      { group: '三種時間點', examples: ['動詞辞書形＋ところ：正要做（尚未開始）', '動詞ている形＋ところ：正在做（進行中）', '動詞た形＋ところ：剛做完（結束不久）'] }
+    ],
+    usages: [
+      { pattern: '動詞辞書形 ＋ ところです', meaning: '表示「正要開始做」，動作還沒開始', example: { jp: 'これから<ruby>出<rt>で</rt></ruby>かけるところです。', zh: '我正要出門。' } },
+      { pattern: '動詞ている形 ＋ ところです', meaning: '表示「正在做」，動作進行中', example: { jp: '<ruby>今<rt>いま</rt></ruby>、レポートを<ruby>書<rt>か</rt></ruby>いているところです。', zh: '我現在正在寫報告。' } },
+      { pattern: '動詞た形 ＋ ところです', meaning: '表示「剛做完」，動作結束不久', example: { jp: 'ちょうど<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたところです。', zh: '剛吃完晚餐。' } }
+    ],
+    quiz: [
+      { question: '「これから<ruby>出<rt>で</rt></ruby>かける___です。」（正要出門）', options: ['ところ', 'ているところ', 'たところ'], answer: 0, explanation: '動作尚未開始，用辭書形＋ところ。' },
+      { question: '動作進行中該用哪種形式＋ところ？', options: ['辞書形', 'ている形', 'た形'], answer: 1, explanation: '進行中的動作用「ている形＋ところ」。' },
+      { question: '剛做完某件事該用哪種形式＋ところ？', options: ['辞書形', 'ている形', 'た形'], answer: 2, explanation: '剛結束的動作用「た形＋ところ」。' }
+    ]
+  },
+  {
+    slug: 'sasete-kudasai',
+    level: 'N4',
+    title: '〜させてください｜請讓我做…',
+    intro: '「させてください」是使役形＋て形＋ください的組合，用來禮貌地請求對方「允許我做…」。',
+    rules: [],
+    usages: [
+      { pattern: '動詞使役形て形 ＋ ください', meaning: '禮貌地請求對方允許自己做某事', example: { jp: 'すみません、ちょっと<ruby>休<rt>やす</rt></ruby>ませてください。', zh: '不好意思，請讓我休息一下。' } },
+      { pattern: '動詞使役形て形 ＋ いただけませんか', meaning: '更加禮貌客氣的請求許可說法', example: { jp: 'この<ruby>資料<rt>しりょう</rt></ruby>をコピーさせていただけませんか。', zh: '可以讓我影印這份資料嗎？' } }
+    ],
+    quiz: [
+      { question: '「<ruby>休<rt>やす</rt></ruby>む」的使役形是「<ruby>休<rt>やす</rt></ruby>ませる」，那「請讓我休息」怎麼說？', options: ['<ruby>休<rt>やす</rt></ruby>ませてください', '<ruby>休<rt>やす</rt></ruby>まさせてください', '<ruby>休<rt>やす</rt></ruby>むでください', '<ruby>休<rt>やす</rt></ruby>みさせてください'], answer: 0, explanation: '使役形て形＋ください：休ませてください。' },
+      { question: '「させてください」主要用在什麼場合？', options: ['命令對方', '請求對方允許自己做某事', '邀請對方', '禁止對方'], answer: 1, explanation: '用來請求對方許可自己做某事。' }
+    ]
+  },
+  {
+    slug: 'beki',
+    level: 'N4',
+    title: '〜べき｜應該做…',
+    intro: '「べき」表示「應該做…」，帶有較強的道義、義務語感，常用在給建議或發表意見時。',
+    rules: [],
+    usages: [
+      { pattern: '動詞辞書形 ＋ べきです', meaning: '表示「應該做…」，帶有義務、道理上的建議', example: { jp: '<ruby>約束<rt>やくそく</rt></ruby>は<ruby>守<rt>まも</rt></ruby>るべきです。', zh: '應該遵守約定。' } },
+      { pattern: '動詞辞書形 ＋ べきではありません', meaning: '表示「不應該做…」', example: { jp: '<ruby>人<rt>ひと</rt></ruby>の<ruby>悪口<rt>わるぐち</rt></ruby>を<ruby>言<rt>い</rt></ruby>うべきではありません。', zh: '不應該說別人的壞話。' } }
+    ],
+    quiz: [
+      { question: '「べき」帶有什麼語感？', options: ['純粹推測', '義務、道理上應該', '命令', '邀請'], answer: 1, explanation: '「べき」表示道義上應該做的事。' },
+      { question: '「べきではありません」表示？', options: ['應該做', '不應該做', '可以做', '必須做'], answer: 1, explanation: '「べきではありません」是「べき」的否定。' },
+      { question: '<ruby>健康<rt>けんこう</rt></ruby>のために、タバコをやめる___です。（為了健康應該戒菸）', options: ['べき', 'はず', 'よう', 'そう'], answer: 0, explanation: '表示應該做的建議用「べき」。' }
+    ]
+  },
+  {
+    slug: 'temo-kamawanai',
+    level: 'N4',
+    title: '〜てもかまいません｜…也沒關係',
+    intro: '「てもかまいません」跟「てもいいです」意思很接近，都表示「許可」，但語氣更正式、更客氣一點。',
+    rules: [],
+    usages: [
+      { pattern: '動詞て形 ＋ もかまいません', meaning: '表示「做…也沒關係」，正式的許可表現', example: { jp: 'ここに<ruby>座<rt>すわ</rt></ruby>ってもかまいませんか。', zh: '可以坐在這裡嗎？' } }
+    ],
+    quiz: [
+      { question: '「てもかまいません」跟哪個句型意思最接近？', options: ['てはいけません', 'てもいいです', 'なければなりません', 'たことがあります'], answer: 1, explanation: '兩者都表示許可，「てもかまいません」語氣更正式。' },
+      { question: '<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>___もかまいませんか。（可以拍照嗎）', options: ['る', 'って', 'り', 'れ'], answer: 1, explanation: '前面接て形：撮って＋もかまいません。' }
+    ]
+  },
+  {
+    slug: 'kuse-ni',
+    level: 'N4',
+    title: '〜くせに｜明明…卻…（帶批評語氣）',
+    intro: '「くせに」跟「のに」意思很像，都是「明明…卻…」，但「くせに」帶有更強烈的不滿、批評、輕視語氣，通常對人使用。',
+    rules: [],
+    usages: [
+      { pattern: '普通形 ＋ くせに', meaning: '表示「明明…卻…」，帶有批評、輕視的語氣', example: { jp: '<ruby>下手<rt>へた</rt></ruby>なくせに、いつも<ruby>自信<rt>じしん</rt></ruby>そうです。', zh: '明明技術差，卻總是一副很有自信的樣子。' } }
+    ],
+    quiz: [
+      { question: '「くせに」跟「のに」比起來，語氣哪個更強烈、帶批評？', options: ['くせに', 'のに'], answer: 0, explanation: '「くせに」帶有更強的批評、輕視語氣。' },
+      { question: '「くせに」通常用在？', options: ['客觀敘述', '對人的不滿或輕視', '正式文件', '天氣預報'], answer: 1, explanation: '「くせに」常用來表達對人的不滿或輕視。' }
+    ]
+  },
 ];
 
 /* 動畫風格句子填空（原創例句，模仿熱血少年漫畫常見台詞語感，非引用特定作品） */
