@@ -491,4 +491,298 @@ const KANJI_SETS = [
       }
     ]
   },
+  {
+    slug: 'n5-batch3',
+    level: 'N5',
+    title: 'N5 漢字第 3 批',
+    desc: '出、入、見、聞、言、行、来、食、飲、話 — 10 個基礎動作動詞漢字',
+    kanji: [
+      {
+        id: 'r01', char: '出', meaning: '出去、拿出', radical: '凵', strokes: 5,
+        onyomi: ['シュツ', 'スイ'], kunyomi: ['で.る', 'だ.す'],
+        examples: [
+          { word: '出る', reading: 'でる', meaning: '出去' },
+          { word: '出発', reading: 'しゅっぱつ', meaning: '出發' },
+          { word: '提出', reading: 'ていしゅつ', meaning: '提交' }
+        ]
+      },
+      {
+        id: 'r02', char: '入', meaning: '進入', radical: '入', strokes: 2,
+        onyomi: ['ニュウ'], kunyomi: ['はい.る', 'い.れる'],
+        examples: [
+          { word: '入る', reading: 'はいる', meaning: '進入' },
+          { word: '入学', reading: 'にゅうがく', meaning: '入學' },
+          { word: '入口', reading: 'いりぐち', meaning: '入口' }
+        ]
+      },
+      {
+        id: 'r03', char: '見', meaning: '看', radical: '見', strokes: 7,
+        onyomi: ['ケン'], kunyomi: ['み.る'],
+        examples: [
+          { word: '見る', reading: 'みる', meaning: '看' },
+          { word: '見学', reading: 'けんがく', meaning: '參觀學習' },
+          { word: '意見', reading: 'いけん', meaning: '意見' }
+        ]
+      },
+      {
+        id: 'r04', char: '聞', meaning: '聽、問', radical: '耳', strokes: 14,
+        onyomi: ['ブン', 'モン'], kunyomi: ['き.く'],
+        examples: [
+          { word: '聞く', reading: 'きく', meaning: '聽、問' },
+          { word: '新聞', reading: 'しんぶん', meaning: '報紙' },
+          { word: '聞こえる', reading: 'きこえる', meaning: '聽得見' }
+        ]
+      },
+      {
+        id: 'r05', char: '言', meaning: '說', radical: '言', strokes: 7,
+        onyomi: ['ゲン', 'ゴン'], kunyomi: ['い.う'],
+        examples: [
+          { word: '言う', reading: 'いう', meaning: '說' },
+          { word: '言葉', reading: 'ことば', meaning: '語言、詞彙' },
+          { word: '方言', reading: 'ほうげん', meaning: '方言' }
+        ]
+      },
+      {
+        id: 'r06', char: '行', meaning: '去、進行', radical: '行', strokes: 6,
+        onyomi: ['コウ', 'ギョウ'], kunyomi: ['い.く', 'おこな.う'],
+        examples: [
+          { word: '行く', reading: 'いく', meaning: '去' },
+          { word: '旅行', reading: 'りょこう', meaning: '旅行' },
+          { word: '銀行', reading: 'ぎんこう', meaning: '銀行' }
+        ]
+      },
+      {
+        id: 'r07', char: '来', meaning: '來', radical: '木', strokes: 7,
+        onyomi: ['ライ'], kunyomi: ['く.る'],
+        examples: [
+          { word: '来る', reading: 'くる', meaning: '來' },
+          { word: '来年', reading: 'らいねん', meaning: '明年' },
+          { word: '将来', reading: 'しょうらい', meaning: '將來' }
+        ]
+      },
+      {
+        id: 'r08', char: '食', meaning: '吃、食物', radical: '食', strokes: 9,
+        onyomi: ['ショク'], kunyomi: ['た.べる', 'く.う'],
+        examples: [
+          { word: '食べる', reading: 'たべる', meaning: '吃' },
+          { word: '食事', reading: 'しょくじ', meaning: '用餐' },
+          { word: '食堂', reading: 'しょくどう', meaning: '食堂' }
+        ]
+      },
+      {
+        id: 'r09', char: '飲', meaning: '喝', radical: '食', strokes: 12,
+        onyomi: ['イン'], kunyomi: ['の.む'],
+        examples: [
+          { word: '飲む', reading: 'のむ', meaning: '喝' },
+          { word: '飲み物', reading: 'のみもの', meaning: '飲料' },
+          { word: '飲食', reading: 'いんしょく', meaning: '飲食' }
+        ]
+      },
+      {
+        id: 'r10', char: '話', meaning: '說話、故事', radical: '言', strokes: 13,
+        onyomi: ['ワ'], kunyomi: ['はな.す', 'はなし'],
+        examples: [
+          { word: '話す', reading: 'はなす', meaning: '說話' },
+          { word: '電話', reading: 'でんわ', meaning: '電話' },
+          { word: '会話', reading: 'かいわ', meaning: '對話' }
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'n4-batch4',
+    level: 'N4',
+    title: 'N4 漢字第 4 批',
+    desc: '使、用、思、考、知、覚、忘、信、感、情 — 10 個內心活動相關 N4 漢字',
+    kanji: [
+      {
+        id: 's01', char: '使', meaning: '使用', radical: '亻', strokes: 8,
+        onyomi: ['シ'], kunyomi: ['つか.う'],
+        examples: [
+          { word: '使う', reading: 'つかう', meaning: '使用' },
+          { word: '使用', reading: 'しよう', meaning: '使用' },
+          { word: '大使', reading: 'たいし', meaning: '大使' }
+        ]
+      },
+      {
+        id: 's02', char: '用', meaning: '用途、事情', radical: '用', strokes: 5,
+        onyomi: ['ヨウ'], kunyomi: [],
+        examples: [
+          { word: '使用', reading: 'しよう', meaning: '使用' },
+          { word: '用事', reading: 'ようじ', meaning: '事情' },
+          { word: '費用', reading: 'ひよう', meaning: '費用' }
+        ]
+      },
+      {
+        id: 's03', char: '思', meaning: '想、覺得', radical: '心', strokes: 9,
+        onyomi: ['シ'], kunyomi: ['おも.う'],
+        examples: [
+          { word: '思う', reading: 'おもう', meaning: '覺得、想' },
+          { word: '思い出', reading: 'おもいで', meaning: '回憶' },
+          { word: '意思', reading: 'いし', meaning: '意思' }
+        ]
+      },
+      {
+        id: 's04', char: '考', meaning: '思考', radical: '耂', strokes: 6,
+        onyomi: ['コウ'], kunyomi: ['かんが.える'],
+        examples: [
+          { word: '考える', reading: 'かんがえる', meaning: '思考' },
+          { word: '参考', reading: 'さんこう', meaning: '參考' },
+          { word: '考え', reading: 'かんがえ', meaning: '想法' }
+        ]
+      },
+      {
+        id: 's05', char: '知', meaning: '知道', radical: '矢', strokes: 8,
+        onyomi: ['チ'], kunyomi: ['し.る'],
+        examples: [
+          { word: '知る', reading: 'しる', meaning: '知道' },
+          { word: '知識', reading: 'ちしき', meaning: '知識' },
+          { word: '通知', reading: 'つうち', meaning: '通知' }
+        ]
+      },
+      {
+        id: 's06', char: '覚', meaning: '記住、感覺', radical: '見', strokes: 12,
+        onyomi: ['カク'], kunyomi: ['おぼ.える', 'さ.める'],
+        examples: [
+          { word: '覚える', reading: 'おぼえる', meaning: '記住' },
+          { word: '覚悟', reading: 'かくご', meaning: '覺悟' },
+          { word: '感覚', reading: 'かんかく', meaning: '感覺' }
+        ]
+      },
+      {
+        id: 's07', char: '忘', meaning: '忘記', radical: '心', strokes: 7,
+        onyomi: ['ボウ'], kunyomi: ['わす.れる'],
+        examples: [
+          { word: '忘れる', reading: 'わすれる', meaning: '忘記' },
+          { word: '忘れ物', reading: 'わすれもの', meaning: '遺失物' },
+          { word: '物忘れ', reading: 'ものわすれ', meaning: '健忘' }
+        ]
+      },
+      {
+        id: 's08', char: '信', meaning: '相信、信件', radical: '亻', strokes: 9,
+        onyomi: ['シン'], kunyomi: [],
+        examples: [
+          { word: '信じる', reading: 'しんじる', meaning: '相信' },
+          { word: '自信', reading: 'じしん', meaning: '自信' },
+          { word: '信号', reading: 'しんごう', meaning: '號誌燈' }
+        ]
+      },
+      {
+        id: 's09', char: '感', meaning: '感覺', radical: '心', strokes: 13,
+        onyomi: ['カン'], kunyomi: [],
+        examples: [
+          { word: '感じる', reading: 'かんじる', meaning: '感覺' },
+          { word: '感動', reading: 'かんどう', meaning: '感動' },
+          { word: '感謝', reading: 'かんしゃ', meaning: '感謝' }
+        ]
+      },
+      {
+        id: 's10', char: '情', meaning: '情感、情況', radical: '忄', strokes: 11,
+        onyomi: ['ジョウ'], kunyomi: [],
+        examples: [
+          { word: '感情', reading: 'かんじょう', meaning: '情感' },
+          { word: '事情', reading: 'じじょう', meaning: '情況' },
+          { word: '情報', reading: 'じょうほう', meaning: '資訊' }
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'n5-batch4',
+    level: 'N5',
+    title: 'N5 漢字第 4 批',
+    desc: '買、売、作、休、立、歩、走、泳、働、待 — 10 個日常動作 N5 漢字',
+    kanji: [
+      {
+        id: 'u01', char: '買', meaning: '買', radical: '貝', strokes: 12,
+        onyomi: ['バイ'], kunyomi: ['か.う'],
+        examples: [
+          { word: '買う', reading: 'かう', meaning: '買' },
+          { word: '買い物', reading: 'かいもの', meaning: '購物' },
+          { word: '売買', reading: 'ばいばい', meaning: '買賣' }
+        ]
+      },
+      {
+        id: 'u02', char: '売', meaning: '賣', radical: '士', strokes: 7,
+        onyomi: ['バイ'], kunyomi: ['う.る'],
+        examples: [
+          { word: '売る', reading: 'うる', meaning: '賣' },
+          { word: '販売', reading: 'はんばい', meaning: '販賣' },
+          { word: '商売', reading: 'しょうばい', meaning: '生意' }
+        ]
+      },
+      {
+        id: 'u03', char: '作', meaning: '製作', radical: '亻', strokes: 7,
+        onyomi: ['サク', 'サ'], kunyomi: ['つく.る'],
+        examples: [
+          { word: '作る', reading: 'つくる', meaning: '製作' },
+          { word: '作文', reading: 'さくぶん', meaning: '作文' },
+          { word: '作品', reading: 'さくひん', meaning: '作品' }
+        ]
+      },
+      {
+        id: 'u04', char: '休', meaning: '休息', radical: '亻', strokes: 6,
+        onyomi: ['キュウ'], kunyomi: ['やす.む'],
+        examples: [
+          { word: '休む', reading: 'やすむ', meaning: '休息' },
+          { word: '休憩', reading: 'きゅうけい', meaning: '休息片刻' },
+          { word: '休日', reading: 'きゅうじつ', meaning: '假日' }
+        ]
+      },
+      {
+        id: 'u05', char: '立', meaning: '站立', radical: '立', strokes: 5,
+        onyomi: ['リツ'], kunyomi: ['た.つ'],
+        examples: [
+          { word: '立つ', reading: 'たつ', meaning: '站立' },
+          { word: '立場', reading: 'たちば', meaning: '立場' },
+          { word: '独立', reading: 'どくりつ', meaning: '獨立' }
+        ]
+      },
+      {
+        id: 'u06', char: '歩', meaning: '走路', radical: '止', strokes: 8,
+        onyomi: ['ホ'], kunyomi: ['ある.く'],
+        examples: [
+          { word: '歩く', reading: 'あるく', meaning: '走路' },
+          { word: '散歩', reading: 'さんぽ', meaning: '散步' },
+          { word: '歩道', reading: 'ほどう', meaning: '人行道' }
+        ]
+      },
+      {
+        id: 'u07', char: '走', meaning: '跑步', radical: '走', strokes: 7,
+        onyomi: ['ソウ'], kunyomi: ['はし.る'],
+        examples: [
+          { word: '走る', reading: 'はしる', meaning: '跑步' },
+          { word: '競走', reading: 'きょうそう', meaning: '賽跑' },
+          { word: '脱走', reading: 'だっそう', meaning: '逃跑' }
+        ]
+      },
+      {
+        id: 'u08', char: '泳', meaning: '游泳', radical: '氵', strokes: 8,
+        onyomi: ['エイ'], kunyomi: ['およ.ぐ'],
+        examples: [
+          { word: '泳ぐ', reading: 'およぐ', meaning: '游泳' },
+          { word: '水泳', reading: 'すいえい', meaning: '游泳運動' },
+          { word: '泳げる', reading: 'およげる', meaning: '會游泳' }
+        ]
+      },
+      {
+        id: 'u09', char: '働', meaning: '工作', radical: '亻', strokes: 13,
+        onyomi: ['ドウ'], kunyomi: ['はたら.く'],
+        examples: [
+          { word: '働く', reading: 'はたらく', meaning: '工作' },
+          { word: '労働', reading: 'ろうどう', meaning: '勞動' },
+          { word: '働き者', reading: 'はたらきもの', meaning: '勤奮的人' }
+        ]
+      },
+      {
+        id: 'u10', char: '待', meaning: '等待', radical: '彳', strokes: 9,
+        onyomi: ['タイ'], kunyomi: ['ま.つ'],
+        examples: [
+          { word: '待つ', reading: 'まつ', meaning: '等待' },
+          { word: '期待', reading: 'きたい', meaning: '期待' },
+          { word: '招待', reading: 'しょうたい', meaning: '邀請' }
+        ]
+      }
+    ]
+  },
 ];
