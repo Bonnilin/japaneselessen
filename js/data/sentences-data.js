@@ -674,6 +674,236 @@ const GRAMMAR_LESSONS = [
       { question: 'これは<ruby>歴史<rt>れきし</rt></ruby>___<ruby>映画<rt>えいが</rt></ruby>です。（這是一部關於歷史的電影）', options: ['について', 'についての', 'につく', 'による'], answer: 1, explanation: '修飾後面的名詞要用「についての」。' }
     ]
   },
+  {
+    slug: 'counters',
+    level: 'N5',
+    title: '數字與助数詞｜怎麼數東西',
+    intro: '日文數東西時，量詞（助数詞）會依物品種類改變，這一課整理最常用的幾種助数詞跟基本數字唸法規則。',
+    rules: [
+      { group: '基本數字', examples: ['1 いち／2 に／3 さん／4 よん・し', '5 ご／6 ろく／7 なな・しち／8 はち', '9 きゅう・く／10 じゅう'] },
+      { group: '常用助数詞', examples: ['〜人（にん）：數人，注意 1人＝ひとり、2人＝ふたり', '〜枚（まい）：數薄的東西（紙、票）', '〜本（ほん）：數細長的東西（筆、瓶）', '〜冊（さつ）：數書本'] }
+    ],
+    usages: [
+      { pattern: '数字 ＋ 助数詞', meaning: '依照物品種類使用對應的量詞', example: { jp: '<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>二枚<rt>にまい</rt></ruby><ruby>買<rt>か</rt></ruby>いました。', zh: '買了兩張票。' } },
+      { pattern: '何 ＋ 助数詞', meaning: '詢問數量「幾…」', example: { jp: '<ruby>家族<rt>かぞく</rt></ruby>は<ruby>何人<rt>なんにん</rt></ruby>ですか。', zh: '你家有幾個人？' } }
+    ],
+    quiz: [
+      { question: '「1人」怎麼唸？', options: ['いちにん', 'ひとり', 'いちじん', 'ひとにん'], answer: 1, explanation: '「1人」和「2人」是特殊唸法：ひとり、ふたり。' },
+      { question: '數紙張、票券用哪個助数詞？', options: ['本', '枚', '冊', '匹'], answer: 1, explanation: '扁平薄的東西用「枚」。' },
+      { question: '數書本用哪個助数詞？', options: ['本', '枚', '冊', '人'], answer: 2, explanation: '書本用「冊」。' },
+      { question: '「2人」怎麼唸？', options: ['ににん', 'ふたり', 'にじん', 'ふたにん'], answer: 1, explanation: '特殊唸法：ふたり。' }
+    ]
+  },
+  {
+    slug: 'tari-tari',
+    level: 'N5',
+    title: '〜たり〜たりします｜做這個做那個',
+    intro: '「たり」用來列舉幾個代表性的動作，暗示還做了其他沒說出來的事，句尾要用「します」收尾。',
+    rules: [
+      { group: '動詞た形＋り', examples: ['<ruby>読<rt>よ</rt></ruby>んだ → <ruby>読<rt>よ</rt></ruby>んだり', '<ruby>見<rt>み</rt></ruby>た → <ruby>見<rt>み</rt></ruby>たり', 'した → したり'] }
+    ],
+    usages: [
+      { pattern: '動詞たり形、動詞たり形 ＋ します', meaning: '列舉幾個代表性的動作（不限於這些）', example: { jp: '<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は、<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いたりします。', zh: '放假的時候會看看書、聽聽音樂之類的。' } }
+    ],
+    quiz: [
+      { question: '「たり」句型的動詞前面要用什麼形式？', options: ['辞書形', 'て形', 'た形', 'ます形'], answer: 2, explanation: '「たり」直接接在た形後面。' },
+      { question: '「たり」句型的句尾通常怎麼收？', options: ['します', 'ください', 'ではない', 'でしょう'], answer: 0, explanation: '句型固定用「〜たり〜たりします」收尾。' },
+      { question: '<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>掃除<rt>そうじ</rt></ruby>を___、<ruby>洗濯<rt>せんたく</rt></ruby>を___します。（打掃、洗衣服等等）', options: ['したり…したり', 'して…して', 'した…した', 'するり…するり'], answer: 0, explanation: '兩個動作都要接「たり」。' }
+    ]
+  },
+  {
+    slug: 'deshou',
+    level: 'N5',
+    title: '〜でしょう｜大概…吧',
+    intro: '「でしょう」用來表達推測，語氣比「と思います」更柔和，也常用在天氣預報。',
+    rules: [],
+    usages: [
+      { pattern: '普通形 ＋ でしょう', meaning: '表示推測「大概…吧」', example: { jp: '<ruby>明日<rt>あした</rt></ruby>は<ruby>晴<rt>は</rt></ruby>れるでしょう。', zh: '明天大概會放晴吧。' } },
+      { pattern: '〜でしょう？', meaning: '語尾上揚，尋求對方同意「…對吧？」', example: { jp: 'この<ruby>映画<rt>えいが</rt></ruby>、<ruby>面白<rt>おもしろ</rt></ruby>いでしょう？', zh: '這部電影很有趣對吧？' } }
+    ],
+    quiz: [
+      { question: '「でしょう」主要表達什麼語氣？', options: ['命令', '推測', '邀請', '禁止'], answer: 1, explanation: '「でしょう」表示柔和的推測語氣。' },
+      { question: '常在什麼場合聽到「でしょう」？', options: ['命令句', '天氣預報', '道歉', '自我介紹'], answer: 1, explanation: '天氣預報常用「でしょう」表示推測。' }
+    ]
+  },
+  {
+    slug: 'mashou-ka',
+    level: 'N5',
+    title: '〜ましょう／ましょうか｜一起做吧',
+    intro: '「ましょう」用來邀請對方一起做某事，「ましょうか」則帶有「要不要我來做…」的體貼語氣。',
+    rules: [],
+    usages: [
+      { pattern: '動詞ます形（去ます）＋ましょう', meaning: '邀請對方一起做', example: { jp: '<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べましょう。', zh: '一起吃午餐吧。' } },
+      { pattern: '動詞ます形（去ます）＋ましょうか', meaning: '詢問「要不要我來做…」，或提議一起做', example: { jp: '<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ちましょうか。', zh: '我來幫你拿行李吧？' } }
+    ],
+    quiz: [
+      { question: '邀請朋友一起去看電影，該用？', options: ['<ruby>行<rt>い</rt></ruby>きます', '<ruby>行<rt>い</rt></ruby>きましょう', '<ruby>行<rt>い</rt></ruby>きたい', '<ruby>行<rt>い</rt></ruby>ってください'], answer: 1, explanation: '邀約用「ましょう」。' },
+      { question: '「ましょうか」比「ましょう」多了什麼語感？', options: ['命令', '詢問對方意願、體貼', '否定', '過去'], answer: 1, explanation: '「ましょうか」帶有詢問對方是否需要幫忙的體貼語感。' },
+      { question: '<ruby>窓<rt>まど</rt></ruby>を<ruby>開<rt>あ</rt></ruby>け___か。（我來幫你開窗戶吧？）', options: ['ます', 'ましょう', 'ました', 'ません'], answer: 1, explanation: '主動提議幫忙用「ましょうか」。' }
+    ]
+  },
+  {
+    slug: 'masenka',
+    level: 'N5',
+    title: '〜ませんか｜要不要…？',
+    intro: '「ませんか」用否定疑問的形式來邀約，語氣比「ましょう」更委婉客氣，是很常用的邀請句型。',
+    rules: [],
+    usages: [
+      { pattern: '動詞ます形 ＋ ませんか', meaning: '委婉地邀請對方做某事', example: { jp: '<ruby>今度<rt>こんど</rt></ruby>、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べませんか。', zh: '下次要不要一起吃晚餐？' } }
+    ],
+    quiz: [
+      { question: '「ませんか」比「ましょう」語氣更…', options: ['直接', '委婉客氣', '命令', '生氣'], answer: 1, explanation: '否定疑問形式的邀約更委婉、給對方拒絕空間。' },
+      { question: '<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>公園<rt>こうえん</rt></ruby>を<ruby>散歩<rt>さんぽ</rt></ruby>___か。（要不要一起去公園散步？）', options: ['します', 'しません', 'しました', 'して'], answer: 1, explanation: '委婉邀約用「〜ませんか」。' }
+    ]
+  },
+  {
+    slug: 'adverbial-i',
+    level: 'N5',
+    title: 'い形容詞的副詞形｜〜く',
+    intro: 'い形容詞去掉「い」加上「く」，可以變成副詞修飾動詞，表達「…地做…」。',
+    rules: [
+      { group: 'い形容詞（去い）＋く', examples: ['<ruby>早<rt>はや</rt></ruby>い → <ruby>早<rt>はや</rt></ruby>く', '<ruby>大<rt>おお</rt></ruby>きい → <ruby>大<rt>おお</rt></ruby>きく', 'いい → よく（特例）'] }
+    ],
+    usages: [
+      { pattern: 'い形容詞く形 ＋ 動詞', meaning: '修飾動詞，表達「…地做…」', example: { jp: '<ruby>明日<rt>あした</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きます。', zh: '明天要早起。' } },
+      { pattern: 'な形容詞語幹 ＋ に ＋ 動詞', meaning: 'な形容詞的副詞形是「語幹＋に」', example: { jp: '<ruby>部屋<rt>へや</rt></ruby>を<ruby>綺麗<rt>きれい</rt></ruby>に<ruby>掃除<rt>そうじ</rt></ruby>します。', zh: '把房間打掃乾淨。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>早<rt>はや</rt></ruby>い」的副詞形是？', options: ['<ruby>早<rt>はや</rt></ruby>いく', '<ruby>早<rt>はや</rt></ruby>く', '<ruby>早<rt>はや</rt></ruby>くて', '<ruby>早<rt>はや</rt></ruby>いに'], answer: 1, explanation: 'い形容詞去い加く。' },
+      { question: '「いい」的副詞形是？（特例）', options: ['いく', 'よく', 'いいく', 'よいく'], answer: 1, explanation: '「いい」變化要用「よい」的形式：よく。' },
+      { question: 'な形容詞變副詞時要加什麼？', options: ['く', 'に', 'て', 'な'], answer: 1, explanation: 'な形容詞的副詞形是「語幹＋に」。' },
+      { question: '<ruby>字<rt>じ</rt></ruby>を___<ruby>書<rt>か</rt></ruby>いてください。（請把字寫大一點）', options: ['<ruby>大<rt>おお</rt></ruby>きいに', '<ruby>大<rt>おお</rt></ruby>きく', '<ruby>大<rt>おお</rt></ruby>きいて', '<ruby>大<rt>おお</rt></ruby>きな'], answer: 1, explanation: 'い形容詞副詞形：大きい→大きく。' }
+    ]
+  },
+  {
+    slug: 'koto-no-nominalization',
+    level: 'N5',
+    title: '〜こと／の｜把動詞變成名詞',
+    intro: '在動詞辭書形後面加上「こと」或「の」，可以把整個動作變成名詞使用，是很多句型的接續基礎。',
+    rules: [],
+    usages: [
+      { pattern: '動詞辞書形 ＋ ことが ＋ 好き／上手／苦手', meaning: '描述對某件事的喜好或能力', example: { jp: '<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>むことが<ruby>好<rt>す</rt></ruby>きです。', zh: '喜歡看書。' } },
+      { pattern: '動詞辞書形 ＋ のを ＋ 見る／聞く', meaning: '感官動詞前面習慣用「の」', example: { jp: '<ruby>子供<rt>こども</rt></ruby>が<ruby>歌<rt>うた</rt></ruby>うのを<ruby>聞<rt>き</rt></ruby>きました。', zh: '聽到小孩在唱歌。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>泳<rt>およ</rt></ruby>ぐ___が<ruby>好<rt>す</rt></ruby>きです。」（喜歡游泳）', options: ['こと', 'の', 'もの', 'とき'], answer: 0, explanation: '「好き」前面習慣用「こと」把動詞名詞化。' },
+      { question: '感官動詞（見る／聞く）前面習慣用哪個？', options: ['こと', 'の'], answer: 1, explanation: '感官動詞前面習慣用「の」。' }
+    ]
+  },
+  {
+    slug: 'nda-explanatory',
+    level: 'N4',
+    title: '〜んです｜說明理由、強調語氣',
+    intro: '「んです」（普通形是「のです」的口語縮約）用來說明理由、背景，或加強語氣，是日常會話中出現頻率極高的句型。',
+    rules: [
+      { group: '普通形＋んです', examples: ['<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>くんです', '<ruby>忙<rt>いそが</rt></ruby>しい → <ruby>忙<rt>いそが</rt></ruby>しいんです', '<ruby>元気<rt>げんき</rt></ruby> → <ruby>元気<rt>げんき</rt></ruby>なんです'] }
+    ],
+    usages: [
+      { pattern: '〜んです（說明理由）', meaning: '針對前面的狀況說明原因、背景', example: { jp: '<ruby>顔色<rt>かおいろ</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いですね。<ruby>実<rt>じつ</rt></ruby>は、<ruby>昨日<rt>きのう</rt></ruby><ruby>寝<rt>ね</rt></ruby>ていないんです。', zh: '你臉色不太好耶。其實我昨天沒睡。' } },
+      { pattern: 'どうして／なぜ ＋ 〜んですか', meaning: '詢問理由時常搭配使用', example: { jp: 'どうして<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだんですか。', zh: '你為什麼向學校請假了？' } }
+    ],
+    quiz: [
+      { question: '「<ruby>元気<rt>げんき</rt></ruby>」加上んです是？', options: ['<ruby>元気<rt>げんき</rt></ruby>んです', '<ruby>元気<rt>げんき</rt></ruby>なんです', '<ruby>元気<rt>げんき</rt></ruby>だんです', '<ruby>元気<rt>げんき</rt></ruby>んですです'], answer: 1, explanation: 'な形容詞・名詞接んです要加「な」。' },
+      { question: '「んです」主要用來做什麼？', options: ['命令', '說明理由或強調', '禁止', '邀請'], answer: 1, explanation: '「んです」用來說明背景理由，或加強語氣。' },
+      { question: 'どうして<ruby>遅<rt>おく</rt></ruby>れた___か。（為什麼遲到了）', options: ['です', 'んです', 'ました', 'ください'], answer: 1, explanation: '詢問理由常搭配「んですか」。' }
+    ]
+  },
+  {
+    slug: 'imperative-prohibitive',
+    level: 'N4',
+    title: '命令形・禁止形｜強烈的命令與禁止',
+    intro: '命令形跟禁止形語氣非常強烈，通常用在標語、緊急狀況，或漫畫、體育場合，日常會話很少直接對人使用。',
+    rules: [
+      { group: '命令形｜第一類：え段', examples: ['<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>け', '<ruby>読<rt>よ</rt></ruby>む → <ruby>読<rt>よ</rt></ruby>め'] },
+      { group: '命令形｜第二類：去る＋ろ', examples: ['<ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べろ', '<ruby>見<rt>み</rt></ruby>る → <ruby>見<rt>み</rt></ruby>ろ'] },
+      { group: '禁止形｜辞書形＋な', examples: ['<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>くな', '<ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べるな'] }
+    ],
+    usages: [
+      { pattern: '命令形', meaning: '強烈的命令語氣，常見於標語或緊急狀況', example: { jp: '<ruby>危<rt>あぶ</rt></ruby>ない、<ruby>逃<rt>に</rt></ruby>げろ！', zh: '危險，快逃！' } },
+      { pattern: '辞書形 ＋ な', meaning: '強烈的禁止語氣，「不准…」', example: { jp: 'ここに<ruby>入<rt>はい</rt></ruby>るな。', zh: '禁止進入。' } }
+    ],
+    quiz: [
+      { question: '「<ruby>行<rt>い</rt></ruby>く」的命令形是？', options: ['<ruby>行<rt>い</rt></ruby>け', '<ruby>行<rt>い</rt></ruby>こう', '<ruby>行<rt>い</rt></ruby>くな', '<ruby>行<rt>い</rt></ruby>きろ'], answer: 0, explanation: '第一類動詞命令形：う段改え段。' },
+      { question: '「<ruby>食<rt>た</rt></ruby>べる」的命令形是？', options: ['<ruby>食<rt>た</rt></ruby>べれ', '<ruby>食<rt>た</rt></ruby>べろ', '<ruby>食<rt>た</rt></ruby>べな', '<ruby>食<rt>た</rt></ruby>べよ'], answer: 1, explanation: '第二類動詞命令形：去る加ろ。' },
+      { question: '「辞書形＋な」是什麼意思？', options: ['命令', '禁止', '邀請', '推測'], answer: 1, explanation: '辞書形加な表示強烈的禁止。' }
+    ]
+  },
+  {
+    slug: 'te-iku-kuru',
+    level: 'N4',
+    title: '〜ていく・〜てくる｜狀態的變化方向',
+    intro: '「ていく」表示狀態朝未來、遠離說話者的方向變化，「てくる」表示狀態朝現在、靠近說話者的方向變化。',
+    rules: [],
+    usages: [
+      { pattern: '動詞て形 ＋ いきます', meaning: '表示狀態從現在持續到未來，或動作漸漸遠離', example: { jp: 'これから<ruby>寒<rt>さむ</rt></ruby>くなっていきます。', zh: '接下來會漸漸變冷。' } },
+      { pattern: '動詞て形 ＋ きます', meaning: '表示狀態從過去持續到現在，或動作漸漸靠近', example: { jp: '<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>上手<rt>じょうず</rt></ruby>になってきました。', zh: '日文漸漸變得比較好了。' } }
+    ],
+    quiz: [
+      { question: '「〜ていく」表示變化朝哪個方向？', options: ['朝過去', '朝未來、遠離現在', '沒有方向', '朝說話者靠近'], answer: 1, explanation: '「ていく」表示朝未來發展的變化。' },
+      { question: '<ruby>子供<rt>こども</rt></ruby>がだんだん<ruby>大<rt>おお</rt></ruby>きくなって___。（小孩漸漸長大了，到目前為止）', options: ['いきました', 'きました', 'おきました', 'しまいました'], answer: 1, explanation: '從過去到現在的變化用「てきました」。' }
+    ]
+  },
+  {
+    slug: 'toiu',
+    level: 'N4',
+    title: '〜という｜叫做…、所謂的…',
+    intro: '「という」用來介紹或引用一個名稱、說法，等於中文的「叫做…」「所謂的…」。',
+    rules: [],
+    usages: [
+      { pattern: '名詞 ＋ という ＋ 名詞', meaning: '介紹一個具體的名稱', example: { jp: '「<ruby>桜<rt>さくら</rt></ruby>」という<ruby>花<rt>はな</rt></ruby>を<ruby>知<rt>し</rt></ruby>っていますか。', zh: '你知道叫做「櫻花」的花嗎？' } },
+      { pattern: '〜という<ruby>話<rt>はなし</rt></ruby>／こと', meaning: '轉述聽來的消息或說法', example: { jp: '<ruby>彼<rt>かれ</rt></ruby>は<ruby>来月<rt>らいげつ</rt></ruby><ruby>結婚<rt>けっこん</rt></ruby>するという<ruby>話<rt>はなし</rt></ruby>です。', zh: '聽說他下個月要結婚。' } }
+    ],
+    quiz: [
+      { question: '「という」的意思是？', options: ['因為', '叫做、所謂的', '雖然', '如果'], answer: 1, explanation: '「という」用來介紹或轉述一個名稱、說法。' },
+      { question: '<ruby>田中<rt>たなか</rt></ruby>___<ruby>人<rt>ひと</rt></ruby>を<ruby>知<rt>し</rt></ruby>っていますか。（你認識一個叫田中的人嗎）', options: ['という', 'とした', 'となる', 'とみる'], answer: 0, explanation: '介紹名字用「という」。' }
+    ]
+  },
+  {
+    slug: 'hazu',
+    level: 'N4',
+    title: '〜はず｜應該是…',
+    intro: '「はず」表示說話者根據已知的資訊，有相當把握地做出推測，語感是「按理說應該…」。',
+    rules: [],
+    usages: [
+      { pattern: '普通形 ＋ はずです', meaning: '表示有根據的推測「應該是…」', example: { jp: '<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>三時<rt>さんじ</rt></ruby>に<ruby>始<rt>はじ</rt></ruby>まるはずです。', zh: '會議應該三點開始。' } },
+      { pattern: '普通形 ＋ はずがありません', meaning: '表示「不可能…」，強烈否定', example: { jp: '<ruby>彼<rt>かれ</rt></ruby>が<ruby>嘘<rt>うそ</rt></ruby>をつくはずがありません。', zh: '他不可能說謊。' } }
+    ],
+    quiz: [
+      { question: '「はず」表示什麼？', options: ['命令', '有根據的推測', '邀請', '禁止'], answer: 1, explanation: '「はず」表示有把握的推測。' },
+      { question: '「はずがありません」表示？', options: ['應該是', '不可能', '也許', '請求'], answer: 1, explanation: '「はずがありません」表示強烈否定「不可能」。' },
+      { question: '<ruby>今頃<rt>いまごろ</rt></ruby>、<ruby>彼<rt>かれ</rt></ruby>はもう<ruby>家<rt>いえ</rt></ruby>に___はずです。（他現在應該已經到家了）', options: ['<ruby>着<rt>つ</rt></ruby>いた', '<ruby>着<rt>つ</rt></ruby>く', '<ruby>着<rt>つ</rt></ruby>いて', '<ruby>着<rt>つ</rt></ruby>き'], answer: 0, explanation: '「はず」前面接普通形，這裡是過去式「着いた」。' }
+    ]
+  },
+  {
+    slug: 'kamoshirenai',
+    level: 'N4',
+    title: '〜かもしれません｜也許…',
+    intro: '「かもしれません」表示不太確定的推測，語氣比「はず」「でしょう」更弱、更保留。',
+    rules: [],
+    usages: [
+      { pattern: '普通形 ＋ かもしれません', meaning: '表示「也許…、可能…」，不太確定的推測', example: { jp: '<ruby>明日<rt>あした</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るかもしれません。', zh: '明天也許會下雪。' } }
+    ],
+    quiz: [
+      { question: '「かもしれません」跟「はずです」比起來，語氣哪個更不確定？', options: ['かもしれません', 'はずです'], answer: 0, explanation: '「かもしれません」是比較保留、不確定的推測。' },
+      { question: '<ruby>彼<rt>かれ</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby><ruby>来<rt>こ</rt></ruby>ない___。（他今天也許不會來）', options: ['かもしれません', 'はずです', 'でしょうか', 'という'], answer: 0, explanation: '不確定的推測用「かもしれません」。' }
+    ]
+  },
+  {
+    slug: 'ta-bakari',
+    level: 'N4',
+    title: '〜たばかり｜剛剛做完…',
+    intro: '「たばかり」表示某個動作才剛剛結束不久，帶有「時間還很短」的語感。',
+    rules: [
+      { group: '動詞た形＋ばかり', examples: ['<ruby>着<rt>つ</rt></ruby>いた → <ruby>着<rt>つ</rt></ruby>いたばかり', '<ruby>始<rt>はじ</rt></ruby>めた → <ruby>始<rt>はじ</rt></ruby>めたばかり'] }
+    ],
+    usages: [
+      { pattern: '動詞た形 ＋ ばかりです', meaning: '表示動作剛結束不久', example: { jp: '<ruby>今<rt>いま</rt></ruby>、<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたばかりです。', zh: '我剛到車站不久。' } }
+    ],
+    quiz: [
+      { question: '「たばかり」表示什麼？', options: ['即將要做', '剛剛做完不久', '正在做', '一直在做'], answer: 1, explanation: '「たばかり」強調動作剛結束、時間很短。' },
+      { question: '<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>し___です。（剛開始學日文不久）', options: ['<ruby>始<rt>はじ</rt></ruby>めたばかり', '<ruby>始<rt>はじ</rt></ruby>めるばかり', '<ruby>始<rt>はじ</rt></ruby>めているばかり', '<ruby>始<rt>はじ</rt></ruby>めばかり'], answer: 0, explanation: '接続た形＋ばかり。' }
+    ]
+  },
 ];
 
 /* 動畫風格句子填空（原創例句，模仿熱血少年漫畫常見台詞語感，非引用特定作品） */
